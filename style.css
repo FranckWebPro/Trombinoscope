@@ -17,7 +17,7 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    min-height: 15vh;
+    min-height: 7rem;
 }
 
 a {
@@ -25,8 +25,8 @@ a {
 }
 
 main {
-    margin-left: 5%; /*peut-être à adapter*/
-    margin-right: 5%; /*peut-être à adapter*/
+    margin-left: 5%; /*collé au modèle Figma, mais peut-être à réadapter*/
+    margin-right: 5%; /*collé au modèle Figma, mais peut-être à réadapter*/
     /*background-img: insérer le logo en fond*/
 }
 
@@ -35,16 +35,45 @@ ul {
     justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
+    list-style: none;
 }
 
-li {
+.li_logo {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;;
-    width: 140px;
-    height: 70px;
+    width: 140px; /*voir si on garde une taille fixe*/
+    height: 70px; /*voir si on garde une taille fixe*/
+}
+
+.li_text {
+    display: none;
 }
 
 section {
     background: var(--primary-color);
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    main {
+        margin-left: 8%; /*collé au modèle Figma, mais peut-être à réadapter*/
+        margin-right: 8%; /*collé au modèle Figma, mais peut-être à réadapter*/
+        /*background-img: insérer le logo en fond*/
+    }
+
+    .li_logo {
+       display: none;
+    }
+
+    .li_text {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 15px;;
+        width: 300px; /*à modifier + voir si on garde une taille fixe*/
+        height: 70px; /*à modifier + voir si on garde une taille fixe*/
+    }
+
 }
