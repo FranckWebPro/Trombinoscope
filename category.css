@@ -10,8 +10,8 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+body {
+    background-color: var(--secondary-color);
 }
 
 header {
@@ -20,15 +20,19 @@ header {
     min-height: 15vh;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
-    background-color: var(--secondary-color);
-    height: auto;
+    margin-left: 5%; /*peut-être à adapter*/
+    margin-right: 5%; /*peut-être à adapter*/
+    /*background-img: insérer le logo en fond*/
 }
 
 ul {
     display: flex;
-    justify-content: center;
-    gap: 3%;
+    justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -36,7 +40,11 @@ ul {
 li {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    width: 25%;
-    height: 30px; /*à changer*/
-    display: inline-block;
+    border-radius: 15px;;
+    width: 140px;
+    height: 70px;
+}
+
+section {
+    background: var(--primary-color);
 }
