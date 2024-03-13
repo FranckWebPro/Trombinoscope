@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #3A3335;
+    --secondary-color: #F7EFE0;
+    --tertiary-color: #EBE0D1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    min-height: 15vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin-left: 5%; /*peut-être à adapter*/
+    margin-right: 5%; /*peut-être à adapter*/
+    /*background-img: insérer le logo en fond*/
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;;
+    width: 140px;
+    height: 70px;
+}
+
+section {
+    background: var(--primary-color);
+}
