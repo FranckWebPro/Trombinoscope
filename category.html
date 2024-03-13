@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les trois équipes WildCardS : le Staff, les Data et les Javascript">
     <title>Trombinoscope | WildCardS</title>
     <favicon></favicon> <!--à ajouter-->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <!-- Header -->
+    <header id="header">
         <a href="">RETOUR</a> <!--à ajouter-->
-        <img src="" alt="logo with the name of the website" class="logo_wcs">
-        <img src="" alt="logo of the selected category" class="logo_category">
+        <img src="images/logowildCard.svg" alt="logo with the name of the website" class="logoWCS">
+        <label>
+            <input type="text" name="search" id="">
+            <img src="">
+        </label>
     </header>
+    <!-- main content -->
     <main>
-        <nav>
+        <!-- Bouton de navigation -->
         <ul>
-            <li class="li_logo">
-                <img alt="logo of Python, for DATA" src=""> <!--ajouter le lien-->
-            </li> 
-            <li class="li_text">
-                <p>DATA</p>
-            </li> 
-            <li class="li_logo">
-                <img alt="logo of JavaScript, for Web developers" src=""> <!--ajouter le lien-->
-            </li> 
-            <li class="li_text">
-                <p>JAVASCRIPT</p>
-            </li> 
-            <li class="li_logo">
-                <img alt="logo of Wild Code School, for Staff" src=""> <!--ajouter le lien-->
-            </li> 
-            <li class="li_text">
-                <p>STAFF</p>
-            </li> 
+            <li>
+                <button>
+                    <p>DATA</p>
+                    <img alt="logo of Python, for DATA" src="images/logopython.svg" class="dataLogo"> <!--ajouter le lien-->
+                </button>
+
+            </li>
+            <li>
+                <button>
+                    <p>JAVASCRIPT</p>
+                    <img alt="logo of JavaScript, for Web developers" src="images/logojs.svg" class="javascriptLogo">
+                    <!--ajouter le lien-->
+                </button>
+
+            </li>
+            <li>
+                <button>
+                    <p>STAFF</p>
+                    <img alt="logo of Wild Code School, for Staff" src="images/logowildstaff.svg" class="staffLogo"> <!--ajouter le lien-->
+                </button>
+
+            </li>
         </ul>
-        </nav>
-        <section class="cards_grid">
+        <!-- Grille de cartes -->
+        <section>
             <!--mettre du texte pour tester-->
         </section>
-        <img alt="arrow to go back to the top of the page" class="arrow_up">
+        <a href="header">
+            <img src="" alt="go back to the top" class="arrowUp">
+        </a>
+        
     </main>
 </body>
+
 </html>

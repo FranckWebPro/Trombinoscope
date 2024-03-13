@@ -12,7 +12,9 @@
 :root {
     --primary-color: #3A3335;
     --secondary-color: #F7EFE0;
-    --tertiary-color: #EBE0D1;
+    --text-color: #EBE0D1;
+    --heading-font: "Beleren-Bold";
+    --text-font: "Imprima";
 }
 
 * {
@@ -23,13 +25,24 @@
 
 body {
     background-color: var(--secondary-color);
-    font-family: "Beleren-Bold", sans-serif;
+    font-family: var(--text-font), sans-serif;
 }
 
 header {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
-    min-height: 7rem;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>img {
+    width: clamp(60px, 30vw, 200px);
+}
+
+header input {
+    display: none;
 }
 
 a {
@@ -37,55 +50,53 @@ a {
 }
 
 main {
-    margin-left: 5%; /*collé au modèle Figma, mais peut-être à réadapter*/
-    margin-right: 5%; /*collé au modèle Figma, mais peut-être à réadapter*/
-    /*background-img: insérer le logo en fond*/
+    margin: 0 1rem;
+    background-color: var(--secondary-color);
 }
 
 ul {
     display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    justify-content: space-evenly;
+    padding: 1rem 0;
     list-style: none;
 }
 
-.li_logo {
+button {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    border-radius: 15px;;
-    width: 140px; /*voir si on garde une taille fixe*/
-    height: 70px; /*voir si on garde une taille fixe*/
+    border-radius: 15px;
+    padding: 0.25rem;
+    width: clamp(80px, 25vw, 300px);
+    height: clamp(45px, 8vh, 60px);
 }
 
-.li_text {
+button>p {
     display: none;
 }
 
-section {
-    background: var(--primary-color);
+button>img {
+    max-width: clamp(45px, 6vw, 150px);
 }
 
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 1200px) {
-    
     main {
-        margin-left: 8%; /*collé au modèle Figma, mais peut-être à réadapter*/
-        margin-right: 8%; /*collé au modèle Figma, mais peut-être à réadapter*/
+        margin: 0 2rem;
         /*background-img: insérer le logo en fond*/
     }
 
-    .li_logo {
-       display: none;
+    button>img {
+        display: none;
     }
 
-    .li_text {
+    button>p {
         display: inline-block;
-        background-color: var(--primary-color);
         color: var(--secondary-color);
-        border-radius: 15px;;
-        width: 300px; /*à modifier + voir si on garde une taille fixe*/
-        height: 70px; /*à modifier + voir si on garde une taille fixe*/
+        border-radius: 15px;
+        width: 300px;
+        /*à modifier + voir si on garde une taille fixe*/
+        height: 45px;
+        /*à modifier + voir si on garde une taille fixe*/
     }
 
 }
