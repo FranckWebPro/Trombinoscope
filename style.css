@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Beleren-Bold";
+    src: url('fonts/Beleren2016SmallCaps-Bold.ttf');
+    src: url('fonts/Beleren2016SmallCaps-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Imprima";
+    src: url('fonts/Imprima-Regular.ttf');
+}
+
 :root {
     --primary-color: #3A3335;
     --secondary-color: #F7EFE0;
@@ -13,6 +24,13 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+body {
+    background-color: var(--secondary-color);
+    font-family: "Beleren-Bold", sans-serif;
+}
+>>>>>>> 64d77678ebed20d532930a69b3db8c7813e846c9
 
 header {
     background-color: var(--primary-color);
