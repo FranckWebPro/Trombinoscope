@@ -2,6 +2,9 @@
     --primary-color: #3A3335;
     --secondary-color: #F7EFE0;
     --tertiary-color: #EBE0D1;
+    --font-primary-color: #F7EFE0;
+    --font-secondary-color:#3A3335;
+    --font-tertiary-color: black;
 }
 
 * {
@@ -10,14 +13,24 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--secondary-color);
-}
 
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    min-height: 7rem;
+    min-height: 10vh;
+}
+
+
+h1 {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: .8rem;
+}
+
+body {
+    background-color: var(--secondary-color);
 }
 
 a {
@@ -39,7 +52,7 @@ ul {
 }
 
 .li_logo {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--secondary-color);
     border-radius: 15px;;
     width: 140px; /*voir si on garde une taille fixe*/
@@ -51,7 +64,7 @@ ul {
 }
 
 section {
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 
