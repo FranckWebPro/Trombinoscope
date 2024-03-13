@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #3A3335;
+    --secondary-color: #F7EFE0;
+    --tertiary-color: #EBE0D1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    min-height: 15vh;
+}
+
+main {
+    background-color: var(--secondary-color);
+    height: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 25%;
+    height: 30px; /*à changer*/
+    display: inline-block;
+}
