@@ -35,8 +35,13 @@ header {
     min-height: 70px;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
 }
 
 header>img {
@@ -106,11 +111,7 @@ p {
     font-family: var(--text-font);
     margin-top: 10vw;
     text-align: center;
-}
-
-main {
-    margin: 0 1rem;
-    background-color: var(--secondary-color);
+    line-height: 20px;
 }
 
 ul {
@@ -123,7 +124,8 @@ ul {
 
 main>h2 {
     font-family: var(--heading-font);
-    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
     margin-top: 10vw;
     margin-bottom: 10vw;
 }
@@ -141,6 +143,9 @@ section {
 a>h2 {
     font-size: 4vw;
     text-align: center;
+    margin-top: 3vw;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
 }
 
 button {
