@@ -34,7 +34,7 @@ header {
     min-height: 70px;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
 }
 
@@ -42,13 +42,44 @@ header>img {
     width: clamp(60px, 30vw, 200px);
 }
 
-label>input {
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0.2rem;
+} 
+
+nav>img{
+    width: clamp(30px, 4vw, 80px);
+}
+
+/*
+nav>a {
+
+    width: 100%;
+} */
+
+.flecheHeader {
+    width: 10%;
+}
+
+.retourHeader {
     display: none;
 }
 
-label>img{
-    width: clamp(30px, 4vw, 80px);
+.logoWCS {
+    width: 40%;
 }
+
+.logoP {
+    width: 11%;
+}
+
+/*
+label>input {
+    display: none;
+}*/
 
 a {
     text-decoration: none;
@@ -103,6 +134,10 @@ button>img {
         /*à modifier + voir si on garde une taille fixe*/
         height: 45px;
         /*à modifier + voir si on garde une taille fixe*/
+    }
+    
+    .arrowUp{
+        min-width: 60px;
     }
 
 }
