@@ -128,7 +128,7 @@ main>h2 {
     margin-bottom: 10vw;
 }
 
-section {
+.boosters {
     display: flex;
     justify-content: space-between;
 }
