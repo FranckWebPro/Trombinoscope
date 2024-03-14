@@ -130,11 +130,6 @@ main>h2 {
     margin-bottom: 10vw;
 }
 
-.boosters {
-    display: flex;
-    justify-content: space-between;
-}
-
 .carousel {
     width: 5rem;
     filter: drop-shadow(0 0.25rem 0.25rem black);
