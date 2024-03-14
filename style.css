@@ -39,6 +39,10 @@ header {
     align-items: center;
 }
 
+header>img {
+    width: clamp(60px, 50vw, 200px);
+}
+
 .logoWCS {
     width: clamp(60px, 30%, 200px);
 }
@@ -85,9 +89,28 @@ label>input {
     background-color: var(--secondary-color);
 }
 
+label>input {
+    display: none;
+}
+
+label>img {
+    width: clamp(30px, 4vw, 80px);
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+p {
+    font-family: var(--text-font);
+    margin-top: 10vw;
+    text-align: center;
+}
+
+main {
+    margin: 0 1rem;
+    background-color: var(--secondary-color);
 }
 
 ul {
@@ -96,6 +119,28 @@ ul {
     padding: 1rem 0;
     list-style: none;
     gap: .25rem;
+}
+
+main>h2 {
+    font-family: var(--heading-font);
+    margin-left: 3rem;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booster {
+    width: 5rem;
+    filter: drop-shadow(0 0.25rem 0.25rem black);
+}
+
+a>h2 {
+    font-size: 4vw;
+    text-align: center;
 }
 
 button {
