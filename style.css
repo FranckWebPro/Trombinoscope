@@ -91,6 +91,7 @@ section {
 
 .booster {
     width: 5rem;
+    filter: drop-shadow(0 0.25rem 0.25rem black);
 }
 
 a>h2 {
