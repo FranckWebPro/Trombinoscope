@@ -40,5 +40,3 @@ dataCards.style.backgroundImage = "url('images/Background-card-Data.png')";
 
 
 console.log(database);
-
-/* EN COURS NE PAS TOUCHER AU CODE CI-DESSUS SVP MERCI */ 
