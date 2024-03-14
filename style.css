@@ -38,20 +38,31 @@ header {
     align-items: center;
 }
 
+.main {
+    display: flex;
+    justify-content: center;
+}
+
 header>img {
-    width: clamp(60px, 30vw, 200px);
+    width: clamp(60px, 50vw, 200px);
 }
 
 label>input {
     display: none;
 }
 
-label>img{
+label>img {
     width: clamp(30px, 4vw, 80px);
 }
 
 a {
     text-decoration: none;
+}
+
+p {
+    font-family: var(--text-font);
+    margin-top: 10vw;
+    text-align: center;
 }
 
 main {
@@ -64,6 +75,27 @@ ul {
     justify-content: space-evenly;
     padding: 1rem 0;
     list-style: none;
+}
+
+main>h2 {
+    font-family: var(--heading-font);
+    margin-left: 3rem;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booster {
+    width: 5rem;
+}
+
+a>h2 {
+    font-size: 4vw;
+    text-align: center;
 }
 
 button {
