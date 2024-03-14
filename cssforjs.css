@@ -1,5 +1,4 @@
 #section-cards {
-    text-align: center; /* ne fonctionne pas - voir avec le CSS commun pour savoir ce qui bloque*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,5 +29,3 @@
 .data-cards-text {
     color: 3A3335; /*à appeler "primary color" si on fusionne avec autre fichier css*/
 }
-
-/* EN COURS NE PAS TOUCHER A CE CODE SVP MERCI */ 
