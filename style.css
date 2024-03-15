@@ -198,8 +198,7 @@ section {
         display: inline-block;
         color: var(--text-color);
         text-align: center;
-        font-size: clamp(1.2rem, 2vw, 2rem);
-    }
+        font-size: clamp(1.2rem, 2vw, 2rem);    }
     
     .arrowUp{
         min-width: 60px;
