@@ -33,43 +33,74 @@ header {
     background-color: var(--primary-color);
     width: 100%;
     min-height: 70px;
-    padding: 1rem;
+    padding: .5rem 1rem;
     display: flex;
-<<<<<<< HEAD
-
-=======
+    align-items: center;
     justify-content: center;
->>>>>>> 15efbcaec63147f51536cb75006b392ff7f90b3f
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-#header {
+.btnRetour {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    width: clamp(30px, 10%, 120px);
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    max-height: 45px;
 }
 
-header>img {
-    width: clamp(60px, 50vw, 200px);
+.btnRetour:hover {
+    opacity: 0.33;
+}
+
+a>img {
+    width: clamp(30px, 10%, 120px);
+}
+
+.retour {
+    display: none;
+    font-size: clamp(1rem, 2vw, 1.7rem);
 }
 
 .logoWCS {
-    width: clamp(60px, 30%, 200px);
+    width: clamp(60px, 50%, 300px);
+    padding-bottom: 8px;
 }
 
 .logoTeam {
-    width: clamp(30px, 10%, 120px);
+    width: clamp(30px, 10%, 60px);
 }
 
 main {
     padding: 1rem;
-    background-color: var(--secondary-color);
     gap: 1rem;
-    background-image: url(images/logopythonbackground.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-origin: content-box;
-    min-height: 100vh;
+}
+
+.backgroundImg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    padding-top: 180px;
+    width: clamp(100vw, 100vw, 100vw);
+    height: clamp(100vh, 100vh, 100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backgroundImg>img {
+    width: 80%;
+    height: 80%;
 }
 
 label {
@@ -96,51 +127,16 @@ label>input {
     height: 100%;
     border-radius: 15px 0 0 15px;
     background-color: var(--secondary-color);
+    padding: 0.25rem;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 0.2rem;
-} 
-
-nav>img{
-    width: clamp(30px, 4vw, 80px);
-}
-
-/*
-nav>a {
-
-    width: 100%;
-} */
-
-.flecheHeader {
-    width: 10%;
-}
-
-.retourHeader {
-    display: none;
-}
-
-<<<<<<< HEAD
-.logoWCS {
-    width: 40%;
-=======
 label>img {
     width: clamp(30px, 4vw, 80px);
->>>>>>> 15efbcaec63147f51536cb75006b392ff7f90b3f
 }
 
 .logoP {
     width: 11%;
 }
-
-/*
-label>input {
-    display: none;
-}*/
 
 a {
     text-decoration: none;
@@ -149,7 +145,6 @@ a {
 
 p {
     font-family: var(--text-font);
-    margin-top: 10vw;
     text-align: center;
     line-height: 20px;
 }
@@ -189,7 +184,6 @@ button {
     border-radius: 15px;
     padding: 0.25rem;
     width: clamp(80px, 25vw, 300px);
-    height: clamp(40px, 5vh, 60px);
 }
 
 button>p {
@@ -211,6 +205,18 @@ button>img {
 
 @media screen and (min-width: 768px) {
 
+    .btnRetour {
+        background-color: var(--primary-color);
+    }
+
+    .retour {
+        display: inline-block;
+    }
+
+    a>img {
+        display: none;
+    }
+
     main {
         margin: 0 2rem;
     }
@@ -219,12 +225,16 @@ button>img {
         width: 65%;
     }
 
+    button {
+        padding: .5rem;
+    }
+
     button>img {
         display: none;
     }
 
     button>p {
-        display: inline-block;
+        display: block;
         color: var(--text-color);
         text-align: center;
         font-size: clamp(1.2rem, 2vw, 2rem);
