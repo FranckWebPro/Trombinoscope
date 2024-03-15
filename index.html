@@ -9,13 +9,14 @@
     <title>Trombinoscope WCS Bordeaux 2024 | WildCardS</title>
     <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="cssforjs.css"> <!--fichier temporaire-->
+    <script type="module" src="script.js"></script>
 </head>
 
 <body>
     <!--Header-->
-    <header class="main-pages">
-        <img src="images/logowildCard.svg" alt="logo WildCards">
+    <header>
+        <img src="images/logowildCard.svg" alt="logo WildCards" class="logoWCS">
     </header>
     <!-- Main content -->
     <main>
@@ -24,31 +25,25 @@
         <section class="sliderContainer">
             <!-- Carte équipe Data -->
             <div class="slides">
-                <a class="booster" id="boosterData"><img src="images/booster/boosterdata.png" alt="paquet de carte data"></a>
-                <a>
+                <a href="category.html" class="booster" id="boosterData" ><img src="images/booster/boosterdata.png" alt="paquet de carte data"></a>
+                <a href="category.html">
                     <h2>Team Data</h2>
                 </a>
             </div>
             <!-- Carte équipe JS -->
-            <div class="slides" id="middle">
-                <a class="booster" id="boosterJS"><img src="images/booster/boosterjs.png" alt="paquet de carte JS"></a>
-                <a>
+            <div class="slides">
+                <a href="category.html" class="booster" id="boosterJS"><img src="images/booster/boosterjs.png" alt="paquet de carte JS"></a>
+                <a href="category.html">
                     <h2>Team JS</h2>
                 </a>
-            </div>
+            </div class="boosterStaff">
             <!-- Carte équipe Staff -->
             <div class="slides">
-                <a class="booster" id="boosterStaff"><img src="images/booster/boosterstaff.png"
-                        alt="paquet de carte staff"></a>
-                <a>
+                <a href="category.html" class="booster" id="boosterStaff"><img src="images/booster/boosterstaff.png" alt="paquet de carte staff"></a>
+                <a href="category.html">
                     <h2>Team Staff</h2>
                 </a>
-            </div>
-            <!-- Flêches navigation -->
-            <!-- <div>
-                <img src="">
-                <img src="">
-            </div> -->
+            </div class="boosterStaff">
         </section>
     </main>
 </body>
