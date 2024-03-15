@@ -58,10 +58,6 @@ nav {
     max-height: 45px;
 }
 
-.btnRetour:hover {
-    opacity: 0.33;
-}
-
 a>img {
     width: clamp(30px, 10%, 120px);
 }
@@ -168,6 +164,23 @@ main>h2 {
 .carousel {
     width: 5rem;
     filter: drop-shadow(0 0.25rem 0.25rem black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.booster {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a>h2 {
@@ -193,10 +206,6 @@ button>p {
 button>img {
     max-width: clamp(45px, 6vw, 150px);
     max-height: 100%;
-}
-
-.carousel {
-    width: 100%;
 }
 
 .arrowUp {
