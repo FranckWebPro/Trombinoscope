@@ -1,5 +1,5 @@
-const reponse = await fetch("data.json");
-const dataBase = await reponse.json();
+const reponse = fetch("data.json");
+const dataBase = reponse.json();
 
 
 /// Création des cartes
