@@ -1,12 +1,6 @@
 import database from "./data.json" assert {type:'json'};
 
-// const response = await fetch("data.json");
-// const dataBase = await response.json();
-
-console.log(database);
-
-
-/// Création des cartes - CODE EN COURS : A REFAIRE SELON LES DERNIERS COMMITS HTML ET CSS
+/// Création des cartes - CODE EN COURS DE CREATION
 
 let locationCards = document.getElementById("section-cards");
 
