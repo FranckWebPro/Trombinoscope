@@ -3,8 +3,9 @@ import { displayCard, closeCard } from "./zoom.js";
 
 closeCard();
 
+console.log(database);
+
 /// Création des cartes - CODE EN COURS DE CREATION
-/// (fonctionne mais obligé de rafraîchir la page pour changer d'équipe)
 
 let locationCards = document.getElementById("section-cards");
 
@@ -41,112 +42,66 @@ function createCard (teamName, linkBG, linkLogo) {
    }
 };
 
-const buttonData = document.getElementById("buttonData");
-const buttonJS = document.getElementById("buttonJS");
-const buttonStaff = document.getElementById("buttonStaff");
 
+
+// ANIMATION DES BOUTONS (A REFACTORISER)
+
+let logoTeam = document.querySelector(".logoTeam");
+
+const buttonData = document.getElementById("buttonData");
+let textButtonData = document.getElementById("textButtonData");
 buttonData.addEventListener ("click", () => {
+  locationCards.innerHTML = "";
+  logoTeam.src = "images/logopython.svg";
+  buttonData.style.backgroundColor = "#F7EFE0";
+  textButtonData.style.color = "#3A3335";
+  buttonJS.style.backgroundColor = "#3A3335";
+  textButtonJS.style.color = "#F7EFE0";
+  buttonStaff.style.backgroundColor = "#3A3335";
+  textButtonStaff.style.color = "#F7EFE0";
   createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
   const cards = document.querySelectorAll('.card');
   displayCard(cards);
 });
 
+
+const buttonJS = document.getElementById("buttonJS");
+let textButtonJS = document.getElementById("textButtonJS");
 buttonJS.addEventListener ("click", () => {
+    locationCards.innerHTML = "";
+    logoTeam.src = "images/logojs.svg";
+    buttonJS.style.backgroundColor = "#F7EFE0";
+    textButtonJS.style.color = "#3A3335";
+    buttonData.style.backgroundColor = "#3A3335";
+    textButtonData.style.color = "#F7EFE0";
+    buttonStaff.style.backgroundColor = "#3A3335";
+    textButtonStaff.style.color = "#F7EFE0";
     createCard("JS", "url('images/background-card-JS-small.png')", "images/logojs.svg");
     const cards = document.querySelectorAll('.card');
     displayCard(cards);
 });
 
+const buttonStaff = document.getElementById("buttonStaff");
+let textButtonStaff = document.getElementById("textButtonStaff");
 buttonStaff.addEventListener ("click", () => {
+   locationCards.innerHTML = "";
+   logoTeam.src = "images/logowildstaff.svg";
+   buttonStaff.style.backgroundColor = "#F7EFE0";
+   textButtonStaff.style.color = "#3A3335";
+   buttonData.style.backgroundColor = "#3A3335";
+   textButtonData.style.color = "#F7EFE0";
+   buttonJS.style.backgroundColor = "#3A3335";
+   textButtonJS.style.color = "#F7EFE0";
     createCard("Staff", "url('images/background-card-staff-small.png')", "images/logowildstaff.svg");
     const cards = document.querySelectorAll('.card');
     displayCard(cards);
   });
-  
-
-
-// POUR LE MOMENT IMPOSSIBLE DE GENERER LES CARTES DEPUIS LA PAGE D'ACCUEIL :
-
-// const boosterData = document.getElementById("boosterData");
-
-// boosterData.addEventListener("click", () => {
-//     createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
-// });
 
 
 
-/// CODE INITIAL POUR GENERER LES PAGES, avant refactorisation (cf fonction createCards)
+/// LIEN DEPUIS PAGE D'ACCUEIL QUI NE FONCTIONNE PAS : 
+const boosterData = document.getElementById("boosterData");
 
-// buttonData.addEventListener ("click", () => {
-    
-//     for (let i = 0 ; i < database.length ; i++) {
-//         if (database[i].team === "DATA") {
-//         const card = createElement("div", locationCards, "card");
-//         card.style.backgroundImage = "url('images/Background-card-Data-small.png')";
-
-//         const cardHeader = createElement("div", card, "card-header");
-//         // ce serait mieux de créer ici un header plutôt qu'une div mais header entre
-//         // en conflit avec les propriétés CSS appliquées à tous les header 
-
-//         const cardName = createElement("p", cardHeader, "card-name");
-//         cardName.innerText = database[i].name;
-
-//         const cardLogo = createElement("img", cardHeader, "card-logo");
-//         cardLogo.src = "images/logopython.svg";
-    
-//         const cardImgDiv = createElement("div", card, "card-img-div");
-//         const cardImg = createElement("img", cardImgDiv, "card-img");
-//         cardImg.src = database[i].picture;
-//         }
-//     }
-// });
-
-// buttonJS.addEventListener ("click", () => {
-    
-//     for (let i = 0 ; i < database.length ; i++) {
-//         if (database[i].team === "JS") {
-//         const card = createElement("div", locationCards, "card");
-//         card.style.backgroundImage = "url('images/background-card-JS-small.png')";
-
-//         const cardHeader = createElement("div", card, "card-header");
-//         // ce serait mieux de créer ici un header plutôt qu'une div mais header entre
-//         // en conflit avec les propriétés CSS appliquées à tous les header 
-
-//         const cardName = createElement("p", cardHeader, "card-name");
-//         cardName.innerText = database[i].name;
-
-//         const cardLogo = createElement("img", cardHeader, "card-logo");
-//         cardLogo.src = "images/logojs.svg";
-    
-//         const cardImgDiv = createElement("div", card, "card-img-div");
-//         const cardImg = createElement("img", cardImgDiv, "card-img");
-//         cardImg.src = database[i].picture;
-//         }
-//     }
-// });
-
-// buttonStaff.addEventListener ("click", () => {
-    
-//     for (let i = 0 ; i < database.length ; i++) {
-//         if (database[i].team === "Staff") {
-//         const card = createElement("div", locationCards, "card");
-//         card.style.backgroundImage = "url('images/background-card-staff-small.png')";
-
-//         const cardHeader = createElement("div", card, "card-header");
-//         // ce serait mieux de créer ici un header plutôt qu'une div mais header entre
-//         // en conflit avec les propriétés CSS appliquées à tous les header 
-
-//         const cardName = createElement("p", cardHeader, "card-name");
-//         cardName.innerText = database[i].name;
-
-//         const cardLogo = createElement("img", cardHeader, "card-logo");
-//         cardLogo.src = "images/logowildstaff.svg";
-    
-//         const cardImgDiv = createElement("div", card, "card-img-div");
-//         const cardImg = createElement("img", cardImgDiv, "card-img");
-//         cardImg.src = database[i].picture;
-//         }
-//     }
-// });
-
-
+boosterData.addEventListener("click", () => {
+    createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
+});
