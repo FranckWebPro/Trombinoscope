@@ -90,11 +90,13 @@ main {
 .booster>img {
     width: 5rem;
     filter: drop-shadow(0 0.25rem 0.25rem black);
+    transition-duration: 300ms;
 }
 
 .booster>img:hover {
     transform: scale(1.5);
-    margin: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -107,17 +109,13 @@ main {
 /* carousel */
 
 .sliderContainer {
-    width: 100%;
+    width: auto;
     text-align: center;
-    overflow: hidden;
 }
 
 .slider {
     display: flex;
-
-    overflow-x: auto;
     scroll-snap-type: x mandatory;
-
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
@@ -263,9 +261,10 @@ button>img {
         display: inline-block;
         color: var(--text-color);
         text-align: center;
-        font-size: clamp(1.2rem, 2vw, 2rem);    }
-    
-    .arrowUp{
+        font-size: clamp(1.2rem, 2vw, 2rem);
+    }
+
+    .arrowUp {
         min-width: 60px;
     }
 
