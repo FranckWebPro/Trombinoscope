@@ -1,6 +1,6 @@
 import database from "./data.json" assert {type:'json'};
 
-/// Création des cartes - CODE EN COURS DE CREATION
+// Création des cartes - CODE EN COURS DE CREATION
 
 let locationCards = document.getElementById("section-cards");
 

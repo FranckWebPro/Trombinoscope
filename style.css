@@ -54,6 +54,7 @@ nav {
     justify-content: center;
     padding: .5rem;
     max-height: 45px;
+    transition: opacity .3s;
 }
 
 .btnRetour:hover {
@@ -90,7 +91,6 @@ main {
 
 .booster>img:hover {
     width: 10rem;
-
 }
 
 .sliderContainer {
@@ -225,7 +225,6 @@ button>img {
     button>p {
         display: inline-block;
         color: var(--text-color);
-        text-align: center;
         font-size: clamp(1.2rem, 2vw, 2rem);
     }
 
