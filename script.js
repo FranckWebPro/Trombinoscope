@@ -1,7 +1,7 @@
 import database from "./data.json" assert {type:'json'};
-import { displayCard } from "./zoom.js";
+import { displayCard, closeCard } from "./zoom.js";
 
-
+closeCard();
 
 /// Création des cartes - CODE EN COURS DE CREATION
 /// (fonctionne mais obligé de rafraîchir la page pour changer d'équipe)

@@ -1,5 +1,6 @@
+import database from "./data.json" assert {type: 'json'};
 const zoomDisplay = document.querySelector('.zoomBlurBackground');
-// const closeCard = document.getElementsByClassName('closeButton');
+const closeButton = document.querySelector('.closeButton');
 
 // selectedCard.addEventListener("click", () => {
 //     zoomDisplay.style.display = 'flex';
@@ -10,15 +11,14 @@ const zoomDisplay = document.querySelector('.zoomBlurBackground');
 // });
 
 export const displayCard = (cardsToDisplay) => {
-    console.log("toto");
     cardsToDisplay.forEach(card => {
-        console.log(zoomDisplay)
         card.addEventListener("click", () => {
             zoomDisplay.style.display = 'flex';
         });
     });
 };
 
-// cards.addEventListener("click", () => {
-//     console.log('blggd');
-// });
+export const closeCard = () =>
+    closeButton.addEventListener("click", () => {
+        zoomDisplay.style.display = 'none';
+    });

@@ -1,9 +1,9 @@
 .zoomBlurBackground {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     display: none;
@@ -14,7 +14,7 @@
 .blackBackground {
     width: 100%;
     height: 100%;
-    padding: 3rem;
+    padding: 3rem 1rem 1rem 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
 
 .zoomedCard {
     background-image: url('images/Background-card-Data.png');
-    width: auto;
+    width: 220px;
     height: 350px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 }
 
 .zoomedCardHeader {
-    width: 12rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -54,21 +54,21 @@
     margin-top: 1.2rem;
 }
 
-
 .zoomedCardImgContainer {
     width: 100%;
     padding-top: .2rem;
 }
 
 .zoomedCardPicture {
-    width: 100%;
+    max-width: 100%;
     height: 9.5rem;
     object-fit: cover;
 }
 
 .zoomedCardInfo {
     width: 100%;
-    gap: 1rem;
+    max-height: 50%;
+    gap: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
