@@ -15,34 +15,39 @@
 <body>
     <!--Header-->
     <header>
-        <img src="images/logowildCard.svg" alt="logo WildCards" class="logoWCS">
+        <img src="images/logowildCard.svg" alt="logo WildCards" class="logoWCS logoMain">
     </header>
     <!-- Main content -->
     <main>
         <p>Bienvenue sur le jeu de cartes / trombinoscope de la WildCodeSchool de Bordeaux 2024</p>
         <h2>Choisis ton Clan</h2>
         <section class="sliderContainer">
-            <!-- Carte équipe Data -->
-            <div class="slides">
-                <a href="category.html" class="booster" id="boosterData" ><img src="images/booster/boosterdata.png" alt="paquet de carte data"></a>
-                <a href="category.html">
-                    <h2>Team Data</h2>
-                </a>
+            <div class="slider">
+                <!-- Carte équipe Data -->
+                <div class="slides slides-1">
+                    <a href="category.html" class="booster" id="boosterData"><img src="images/booster/boosterdata.png"
+                            alt="paquet de carte data"></a>
+                    <a href="category.html">
+                        <h2>Team Data</h2>
+                    </a>
+                </div>
+                <!-- Carte équipe JS -->
+                <div class="slides slides-2">
+                    <a href="category.html" class="booster" id="boosterJS"><img src="images/booster/boosterjs.png"
+                            alt="paquet de carte JS"></a>
+                    <a href="category.html">
+                        <h2>Team JS</h2>
+                    </a>
+                </div>
+                <!-- Carte équipe Staff -->
+                <div class="slides slides-3">
+                    <a href="category.html" class="booster" id="boosterStaff"><img src="images/booster/boosterstaff.png"
+                            alt="paquet de carte staff"></a>
+                    <a href="category.html">
+                        <h2>Team Staff</h2>
+                    </a>
+                </div>
             </div>
-            <!-- Carte équipe JS -->
-            <div class="slides">
-                <a href="category.html" class="booster" id="boosterJS"><img src="images/booster/boosterjs.png" alt="paquet de carte JS"></a>
-                <a href="category.html">
-                    <h2>Team JS</h2>
-                </a>
-            </div class="boosterStaff">
-            <!-- Carte équipe Staff -->
-            <div class="slides">
-                <a href="category.html" class="booster" id="boosterStaff"><img src="images/booster/boosterstaff.png" alt="paquet de carte staff"></a>
-                <a href="category.html">
-                    <h2>Team Staff</h2>
-                </a>
-            </div class="boosterStaff">
         </section>
     </main>
     <script type="module" src="script.js"></script>

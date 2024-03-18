@@ -62,4 +62,3 @@ boosterData.addEventListener("click", () => {
 });
 
 
-
