@@ -50,7 +50,7 @@
 @media screen and (min-width: 768px) {
 
     /* VERSION DISPLAY FLEX, seul bémol : la dernière ligne serait peut-être mieux non centrée
-    mais difficile de viser la dernière ligne */
+    mais difficile de viser la dernière ligne
     #section-cards {
         display: flex;
         flex-direction: row;
@@ -58,15 +58,16 @@
         gap: 2rem;
         flex-wrap: wrap;
     }  
+    */
 
     /* VERSION GRID, mais implique de faire plusieurs media screen pour réduire la taille de la grille
-    en fonction de la réduction de taille de l'écran :
+    en fonction de la réduction de taille de l'écran : */
     
     #section-cards {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         justify-items: center;
-    }   */
+    }   
 
     .card {
         height: 350px;
