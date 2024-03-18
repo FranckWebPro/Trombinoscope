@@ -139,7 +139,11 @@ p {
     font-family: var(--text-font);
     margin-top: 10vw;
     text-align: center;
-    line-height: 20px;
+}
+
+main {
+    margin: 0 1rem;
+    background-color: var(--secondary-color);
 }
 
 ul {
@@ -226,7 +230,10 @@ button>img {
         display: inline-block;
         color: var(--text-color);
         text-align: center;
-        font-size: clamp(1.2rem, 2vw, 2rem);
+        font-size: clamp(1.2rem, 2vw, 2rem);    }
+    
+    .arrowUp{
+        min-width: 60px;
     }
 
 }
