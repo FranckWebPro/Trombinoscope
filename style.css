@@ -73,6 +73,10 @@ a>img {
     width: clamp(60px, 30%, 200px);
 }
 
+.logoMain {
+    width: clamp(60px, 60%, 200px);
+}
+
 .logoTeam {
     width: clamp(30px, 10%, 120px);
 }
@@ -89,8 +93,9 @@ main {
 }
 
 .booster>img:hover {
-    width: 10rem;
-
+    transform: scale(1.5);
+    margin: 3rem;
+    padding-bottom: 1rem;
 }
 
 .sliderContainer {
@@ -98,6 +103,30 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+/* carousel */
+
+.sliderContainer {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+
+/* fin carousel */
 
 
 label {
@@ -137,9 +166,13 @@ a {
 
 p {
     font-family: var(--text-font);
-    margin-top: 10vw;
+    margin-top: 2rem;
     text-align: center;
-    line-height: 20px;
+}
+
+main {
+    margin: 0 1rem;
+    background-color: var(--secondary-color);
 }
 
 ul {
@@ -152,8 +185,10 @@ ul {
 
 main>h2 {
     font-family: var(--heading-font);
-    margin: 1rem;
+    margin: 2rem;
     text-align: center;
+    font-size: 2rem;
+
 }
 
 .sliderContainer {
@@ -176,14 +211,16 @@ main>h2 {
 }
 
 .booster>img {
-    width: 5rem;
+    width: 10rem;
     filter: drop-shadow(0 0.25rem 0.25rem black);
 }
 
 a>h2 {
-    font-size: clamp(1.2rem, 3vw, 3.5rem);
+    font-family: var(--heading-font);
+    font-size: clamp(1.2rem, 2vw, 3.5rem);
     text-align: center;
     color: var(--primary-color);
+    margin-top: 1rem;
 }
 
 button {
@@ -243,6 +280,19 @@ button>img {
         margin-top: 0rem;
         font-family: "Beleren-Bold"; /* à modifier si on crée une variable*/
         color: var(--text-color);
+        font-size: clamp(1.2rem, 2vw, 2rem);    }
+    
+    .arrowUp{
+        min-width: 60px;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .slides {
+        margin: 0.75rem;
     }
 
 }
