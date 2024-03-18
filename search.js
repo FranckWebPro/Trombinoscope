@@ -45,3 +45,6 @@ showAvailable.addEventListener("search", () => {
     currentPerson.map((person) => createCard(person));
   }
 });
+
+// html   <!-- Création conditions loupe: <input type="search" class="searchInput" name="term" autocomplete="off" placeholder="Enter a name" id="search-input"> -->
+// <!-- <   (Useful???input type="hidden") name="language" value="fr"> -->   
