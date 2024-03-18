@@ -9,7 +9,6 @@
     <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssforjs.css"> <!--fichier temporaire-->
-    <script type="module" src="script.js"></script>
 </head>
 
 <body>
@@ -26,13 +25,15 @@
     <!-- main content -->
     <main>
         <label>
+            <!-- Création conditions loupe: <input type="search" class="searchInput" name="term" autocomplete="off" placeholder="Search..." id="search-input"> -->
+            <!-- <input type="hidden" name="language" value="fr"> -->   
             <input type="text" name="search">
             <img src="images/search-svgrepo-com.svg">
         </label>
         <!-- Bouton de navigation -->
         <ul>
             <li>
-                <button>
+                <button id="buttonData">
                     <p>DATA</p>
                     <img alt="logo of Python, for DATA" src="images/logopython.svg" class="dataLogo">
                     <!--ajouter le lien-->
@@ -40,7 +41,7 @@
 
             </li>
             <li>
-                <button>
+                <button id="buttonJS">
                     <p>JAVASCRIPT</p>
                     <img alt="logo of JavaScript, for Web developers" src="images/logojs.svg" class="javascriptLogo">
                     <!--ajouter le lien-->
@@ -48,7 +49,7 @@
 
             </li>
             <li>
-                <button>
+                <button id="buttonStaff">
                     <p>STAFF</p>
                     <img alt="logo of Wild Code School, for Staff" src="images/logowildstaff.svg" class="staffLogo">
                     <!--ajouter le lien-->
@@ -63,9 +64,10 @@
                 <img src="images/arrow-right.svg" alt="go back to the top" class="arrowUp">
             </a>  -->
         </section>
-        <div class="backgroundImg"><img src="images/logopythonbackground.svg"
-                alt="image de fond avec le logo de l'équipe"></div>
+        <!-- <div class="backgroundImg"><img src="images/logopythonbackground.svg"
+                alt="image de fond avec le logo de l'équipe"></div> -->
     </main>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
