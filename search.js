@@ -1,18 +1,13 @@
-const reponse = await fetch("data.json");
-const dataBase = await reponse.json();
-// import filename from "path" assert{type:'json'}
+import database from "./data.json" assert {type:'json'};
 
-/*a modifier
-import { container, createCard } from "./createCard";
-import houseToRent from "./houseToRent"; */
 
 // creation const recherche nom 
-// const name = dataBase[].name	
+const name = database[].name	
 
 // je boucle sur mon tableau de noms
-for (let i = 0; i < dataBase.length; i++) {
-  const currentPerson = dataBase[i].name;
-//    createCard(currentPerson);
+for (let i = 0; i < database.length; i++) {
+  const currentPerson = database[i].name;
+//    createCard(currentPerson); importer du fichier avec les cartes cardName?
 
   console.log(currentPerson)
 }
