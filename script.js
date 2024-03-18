@@ -1,4 +1,7 @@
 import database from "./data.json" assert {type:'json'};
+import { displayCard } from "./zoom.js";
+
+
 
 /// Création des cartes - CODE EN COURS DE CREATION
 /// (fonctionne mais obligé de rafraîchir la page pour changer d'équipe)
@@ -44,14 +47,20 @@ const buttonStaff = document.getElementById("buttonStaff");
 
 buttonData.addEventListener ("click", () => {
   createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
 });
 
 buttonJS.addEventListener ("click", () => {
     createCard("JS", "url('images/background-card-JS-small.png')", "images/logojs.svg");
+    const cards = document.querySelectorAll('.card');
+    displayCard(cards);
 });
 
 buttonStaff.addEventListener ("click", () => {
     createCard("Staff", "url('images/background-card-staff-small.png')", "images/logowildstaff.svg");
+    const cards = document.querySelectorAll('.card');
+    displayCard(cards);
   });
   
 
