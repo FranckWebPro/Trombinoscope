@@ -92,6 +92,13 @@ main {
     transition-duration: 300ms;
 }
 
+.booster>img:hover {
+    transform: scale(1.5);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
 .sliderContainer {
     display: flex;
     align-items: center;
@@ -103,7 +110,6 @@ main {
 .sliderContainer {
     width: auto;
     text-align: center;
-    position: relative;
 }
 
 .slider {
