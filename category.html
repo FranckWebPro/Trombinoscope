@@ -28,7 +28,7 @@
     <main>
         <label>
             <!-- Création conditions loupe: <input type="search" class="searchInput" name="term" autocomplete="off" placeholder="Search..." id="search-input"> -->
-            <!-- <input type="hidden" name="language" value="fr"> -->   
+            <!-- <input type="hidden" name="language" value="fr"> -->
             <input type="search" name="search" autocomplete="off" placeholder=" Taper un nom">
             <img src="images/search-svgrepo-com.svg">
         </label>
@@ -65,38 +65,40 @@
             <a href="header">
                 <img src="images/arrow-right.svg" alt="go back to the top" class="arrowUp">
             </a>  -->
-            <div class="zoomBlurBackground">
-                <div></div>
-                <div class="blackBackground">
-                    <div class="zoomedCard">
-                        <div class="zoomedCardHeader">
-                            <p class="zoomedCardName"></p>
-                            <img src="images/logopython.svg" class="zoomedCardLogo">
-                           </div>
-                        <div class="zoomedCardPictureContainer"><img src="images/photos/profilepic8.jpg" class="zoomedCardPicture"></div>
-                        <div class="zoomedCardAttack"><p></p></div>
-                    </div>
-                    <div class="zoomedCardInfo">
-                        <p class="cardBio">treshrsdh</p>
-                        <ul class="cardHard"></ul>
-                        <ul class="cardSoft"></ul>
-                        <p class="cardGoals"></p>
-                        <p class="cardEmail">franck@gmail.com</p>
-                        <div class="socialLink">
-                            <a href=""><img src="images/logoLinkedin.svg" alt="logo LinkedIn"></a>
-                            <a href=""><img src="images/logoX.svg" alt="logo X / Twitter"></a>
-                            <a href=""><img src="images/logogihub.svg" alt="logo github"></a>
-                        </div>
-                    </div>
-                    <img src="images/croix.svg" class="closeButton">
-                </div>
-            </div>
         </section>
+        <div class="zoomBlurBackground">
+            <div class="blackBackground">
+                <div class="zoomedCard">
+                    <div class="zoomedCardHeader">
+                        <p class="zoomedCardName"></p>
+                        <img src="images/logopython.svg" class="zoomedCardLogo">
+                    </div>
+                    <div class="zoomedCardPictureContainer"><img src="images/photos/profilepic8.jpg"
+                            class="zoomedCardImg"></div>
+                    <div>
+                        <p class="zoomedCardAttack"></p>
+                    </div>
+                </div>
+                <div class="zoomedCardInfo">
+                    <p class="cardBio"></p>
+                    <p class="cardHard"></p>
+                    <p class="cardSoft"></p>
+                    <p class="cardGoals"></p>
+                    <p class="cardEmail"></p>
+                    <div class="socialLink">
+                        <a href=""><img src="images/logoLinkedin.svg" alt="logo LinkedIn" class="cardLinkedIn"></a>
+                        <a href=""><img src="images/logoX.svg" alt="logo X / Twitter" class="CardX"></a>
+                        <a href=""><img src="images/logogihub.svg" alt="logo github" class="cardGithub"></a>
+                    </div>
+                </div>
+                <img src="images/croix.svg" class="closeButton">
+            </div>
+        </div>
         <!-- <div class="backgroundImg"><img src="images/logopythonbackground.svg"
                 alt="image de fond avec le logo de l'équipe"></div> -->
     </main>
     <script type="module" src="script.js"></script>
-    <script type="module" src="search.js"></script>
+    <!-- <script type="module" src="search.js"></script> -->
 </body>
 
 </html>
