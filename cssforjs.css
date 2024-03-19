@@ -33,7 +33,7 @@
 }
 
 .card-name {
-    margin-top: 1.2rem; 
+    margin-top: 1.2rem;
     margin-left: .2rem;
     color: #3A3335; /*à appeler "primary color" si on fusionne avec autre fichier css*/
     font-size: 12px;
@@ -59,6 +59,7 @@
     #section-cards {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         justify-content: center;
         gap: 2rem;
         flex-wrap: wrap;
@@ -91,7 +92,6 @@
     #section-cards {
         grid-template-columns: repeat(5, 1fr);
     }   
-
 } 
 
 
