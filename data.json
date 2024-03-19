@@ -9,7 +9,7 @@
         "bio": "J'aime aller au bout des choses - cowabunga!",
         "hardSkills": "Dormir, boire du café",
         "softSkills": "Joyeux, honnête, bienveillant",
-        "attack": "Lancer de jouet"
+        "attack": "Fatal-jouet"
     },
     {
         "name": "Marie-Garance Berthe",
@@ -20,7 +20,7 @@
         "hardSkills": "Organisation, proactivité",
         "softSkills": "Dynamisme, bienveillance",
         "goals": "J'aimerais faire de la gestion de projets humanitaires!",
-        "attack": "Reggeaton"
+        "attack": "ReggeatonDance"
     },
     {
         "name": "Alice Berthelot",
@@ -52,7 +52,7 @@
         "hardSkills": "Parler une langue, être force de proposition, entretenir la relation client",
         "softSkills": "Curieux, persévérant, autonome",
         "goals": "Développer mes compétences pour devenir un bon développeur et intégrer une entreprise en accord avec mes valeurs",
-        "attack": "Discretion"
+        "attack": "Amnesie"
     },
     {
         "name": "Romain Caron",
@@ -100,7 +100,7 @@
         "hardSkills": "Appliqué, obstiné, café",
         "softSkills": "Respect, empathie, rigueur",
         "goals": "Get a job",
-        "attack": "Café"
+        "attack": "Nespresso"
     },
     {
         "name": "Lionel David",
@@ -110,7 +110,8 @@
         "bio": "63 ans marié, aime la généalogie",
         "hardSkills": "La généalogie, manager une équipe, savoir résoudre des problemes",
         "softSkills": "Prendre des décisons, gérer une équipe, curieux",
-        "goals": "Trouver un travail"
+        "goals": "Trouver un travail",
+        "attack": "Généalogie"
     },
     {
         "name": "Kevin Davoust",
@@ -123,7 +124,7 @@
         "hardSkills": "Autonome, fast-learner, efficace",
         "softSkills": "Assez patient, un peu pédagogue j'espère, gentil",
         "goals": "Trouver une entreprise qui m'accepte comme je suis et pas comme elle veut que je sois... ça fait réfléchir.......",
-        "attack": "kata"
+        "attack": "Ultra-kata"
     },
     {
         "name": "Adrien Douville",
@@ -135,7 +136,8 @@
         "bio": "Enchanté, je m'appelle Adrien, élève et développeur au sein de WCS, je cherche constamment à m'améliorer et résoudre de nombreux défis pour devenir plus grand et plus expérimenté. Utilise ma carte pour augmenter tes compétences en JS et React : - let powerScaleJs += 10; - let powerScaleReact += 100;",
         "hardSkills": "Pratique, créativité, manger 7 croissants sur les 22 puis faire l'innocent (désolé mais pas désolé)",
         "softSkills": "Confiance, patience, adaptabilité",
-        "goals": "Monter ma propre boîte, participer au développement technologique du monde de demain tout en étant présent pour ma famille et mes proches."
+        "goals": "Monter ma propre boîte, participer au développement technologique du monde de demain tout en étant présent pour ma famille et mes proches.",
+        "attack": "Lancer de serum phyisio"
     },
     {
         "name": "Yoann Fortin",
@@ -161,7 +163,8 @@
         "bio": "Ancien militaire j'ai souhaité me reconvertir comme développeur web afin de devenir freelance et entreprendre dans le monde de la tech.",
         "hardSkills": "Javascript, No Code, SEO",
         "softSkills": "Autonome, rigoureux, leadership",
-        "goals": "CDD freelance, puis entreprendre"
+        "goals": "CDD freelance, puis entreprendre",
+        "attack": "Lancer de souris"
     },
     {
         "name": "Félicien Gamelin",
@@ -171,7 +174,8 @@
         "bio": "Ancien livreur, né à Bordeaux et vivant à Bordeaux",
         "hardSkills": "La cuisine, le ménage et savoir utiliser le lave-vaisselle ",
         "softSkills": "Simple, sympa et bienveillant max",
-        "goals": "Futur CEO d'Apple"
+        "goals": "Futur CEO d'Apple",
+        "attack": "Lave-vaisselle max"
     },
     {
         "name": "Mohamed Hanafi",
@@ -183,7 +187,8 @@
         "bio": "Je m'appelle Mohamed, 31 ans, papa de deux enfants et actuellement en reconversion pro. J'aime le sport, la musique et voyager.",
         "hardSkills": "Animer, gérer, accueillir",
         "softSkills": "Communication, empathie, calme",
-        "goals": "Travailler dans le domaine de la DATA."
+        "goals": "Travailler dans le domaine de la DATA.",
+        "attack": "Inconnue"
     },
     {
         "name": "Sacha Isambourg",
@@ -193,7 +198,8 @@
         "github": "https://github.com/sachaig",
         "bio": "Je suis joueur, j'ai confiance en moi et en mes capacités",
         "softSkills": "Curieux,responsable,calme",
-        "goals": "Travailler dans le développement web"
+        "goals": "Travailler dans le développement web",
+        "attack": "Sauvagerie (mode leopard)"
     },
     {
         "name": "Samia Jalté",
@@ -203,7 +209,8 @@
         "linkedin": "https://www.linkedin.com/in/samia-jalté-603a131bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         "hardSkills": "Travailler en équipe, gestion de projet, suivi des indicateurs",
         "softSkills": "Adaptabilité, pédagogue et être à l'écoute",
-        "goals": "Travailler dans un domaine combinant la data et la logistique !"
+        "goals": "Travailler dans un domaine combinant la data et la logistique !",
+        "attack": "inconnue"
     },
     {
         "name": "Axel Janiak",
@@ -213,7 +220,8 @@
         "linkedin": "https://fr.linkedin.com/in/axel-janiak",
         "github": "https://github.com/axeljdev",
         "bio": "Je suis sympa et j'adore les jeux vidéo.",
-        "goals": "Trouver un job et réussir ma reconversion"
+        "goals": "Trouver un job et réussir ma reconversion",
+        "attack": "voiture en panne"
     },
     {
         "name": "Jade Jolivet",
@@ -225,7 +233,8 @@
         "bio": "Je suis guidée par un désir constant de croissance personnelle et de réussite. La bienveillance est pour moi la qualité la plus importante pour évoluer, comprendre et soutenir ceux qui m'entourent.",
         "hardSkills": "Communication, travail en équipe et organisation",
         "softSkills": "Optimiste, ouverture d'esprit et à l'écoute.",
-        "goals": "Full-time développeuse web "
+        "goals": "Full-time développeuse web ",
+        "attack": "Lance-cookie"
     },
     {
         "name": "Margaryta Kalchenko",
@@ -233,7 +242,8 @@
         "email": "kalchenko.margaryta@gmail.com",
         "picture": "images/photos/profilepic21.jpg",
         "bio": "Passionnée par la Data, je cherche à acquérir des nouvelles compétences dans ce domaine.",
-        "goals": "Apprendre et évoluer "
+        "goals": "Apprendre et évoluer ",
+        "attack": "inconnue"
     },
     {
         "name": "Sylvain Lafaye",
@@ -245,7 +255,8 @@
         "bio": "Un vrai bout en train Monsieur grumpy",
         "hardSkills": "Bricoler, gérer un client, coordonner une équipe",
         "softSkills": "Débrouillardise, persévérance, esprit d'équipe",
-        "goals": "Devenir développeur web full-stack en tant que salarié dans une entreprise."
+        "goals": "Devenir développeur web full-stack en tant que salarié dans une entreprise.",
+        "attack": "Rire-attaque"
     },
     {
         "name": "Mahau Lepineux",
@@ -257,7 +268,8 @@
         "bio": "Jeune gamer passionné de culture pop japonaise, par nature très curieux et vite tombé dans l'univers numérique. Actuellement en formation de data analyst pour accroître ses compétences informatiques.",
         "hardSkills": "Recherche, réflexion, logique",
         "softSkills": "Patience, pédagogie, écoute ",
-        "goals": "Data scientist"
+        "goals": "Data scientist",
+        "attack": "Japoooon"
     },
     {
         "name": "Aurélien Martin",
@@ -268,7 +280,8 @@
         "bio": "A la suite d’une expérience de 13 ans dans le domaine de la banque et du management et d’une expérience service client dans le domaine de la distribution de 8 ans, je souhaite me reconvertir dans la Data et mettre mon expérience au service de votre entreprise afin d’assurer la meilleure satisfaction client.",
         "hardSkills": "Esprit d’analyse et capacité à prendre des décisions, adaptabilité",
         "softSkills": "Sens du relationnel, esprit d’équipe, autonomie",
-        "goals": "Après la formation de Data Analyst, je souhaite trouver un poste dans lequel je pourrais allier mon expérience professionnelle et les compétences acquises durant ces 5 mois de formation. "
+        "goals": "Après la formation de Data Analyst, je souhaite trouver un poste dans lequel je pourrais allier mon expérience professionnelle et les compétences acquises durant ces 5 mois de formation. ",
+        "attack": "inconnue"
     },
     {
         "name": "Enzo Michel",
@@ -280,7 +293,8 @@
         "bio": "Je suis un développeur web en plein apprentissage. j'aime faire du sport, jouer au football et au basketball et j'aime coder.",
         "hardSkills": "Coder, designer, apprendre",
         "softSkills": "Rigoureux, patient, perfectionniste",
-        "goals": "Travailler au sein d'une grande entreprise en tant que développeur full-stack"
+        "goals": "Travailler au sein d'une grande entreprise en tant que développeur full-stack",
+        "attack": "figmattack"
     },
     {
         "name": "Alexandre Moro",
@@ -291,7 +305,8 @@
         "bio": "Trentenaire en reconversion dans un domaine inconnu avec de super collègues. Adore le sport, le partage et la nourriture.",
         "hardSkills": "Développement wbe en cours d'apprentissage",
         "softSkills": "Résilience, adaptabilité, persévérance",
-        "goals": "Devenir Développeur"
+        "goals": "Devenir Développeur",
+        "attack": "Une de plus"
     },
     {
         "name": "Yasmine Ourici",
@@ -301,7 +316,8 @@
         "github": "https://github.com/Yasmine2702",
         "bio": "Je suis gentille et souriante ",
         "hardSkills": "Savoir utiliser des logiciels et savoir parler une autre langue",
-        "softSkills": "Avoir l'esprit analyste, curieuse et créative"
+        "softSkills": "Avoir l'esprit analyste, curieuse et créative",
+        "attack": "inconnue"
     },
     {
         "name": "Nadège Pau",
@@ -311,7 +327,8 @@
         "bio": "Je suis responsable du campus de Bordeaux et en charge de l'accompagnement et du suivi des élèves.",
         "hardSkills": "Coaching, animation, pédagogie",
         "softSkills": "Bienveillante, optimiste, tenace",
-        "goals": "Accompagner les élèves de la Wild vers la réussite!"
+        "goals": "Accompagner les élèves de la Wild vers la réussite!",
+        "attack": "vase en terre cuite"
     },
     {
         "name": "Philippine Pujol",
@@ -321,7 +338,8 @@
         "bio": "Analyste perspicace organisée de la Wild Code School de Bordeaux",
         "hardSkills": "Café, écouter et analyser",
         "softSkills": "Ponctuelle, disponible, agréable ",
-        "goals": "Carrière en cours de construction"
+        "goals": "Carrière en cours de construction",
+        "attack": "inconnue"
     },
     {
         "name": "Nesrine Rabbaoui",
@@ -331,7 +349,8 @@
         "github": "https://github.com/NESRINERABAAOUI",
         "hardSkills": "Gestion du dossier administratifs",
         "softSkills": "Persévérance, esprit du group, patience",
-        "goals": "Travailler en tant que développeur ou testeur informatique"
+        "goals": "Travailler en tant que développeur ou testeur informatique",
+        "attack": "inconnue"
     },
     {
         "name": "Axel Ribas",
@@ -343,7 +362,8 @@
         "bio": "Fin analyste en bootcamp Data Analyst à la Wild Code School de Bordeaux",
         "hardSkills": "Pythonner, SQLer, Exceller",
         "softSkills": "Exceptionnel, génial, incroyable",
-        "goals": "A définir"
+        "goals": "A définir",
+        "attack": "Pythonneur"
     },
     {
         "name": "Pierre-Jean Roggy",
@@ -355,7 +375,8 @@
         "bio": "En reconversion, je veux devenir un bon développeur et coder dans la bonne humeur ! Je suis un collègue agréable et toujours partant pour un nouveau projet.",
         "hardSkills": "JS, Java, Angular",
         "softSkills": "Travail et esprit d'équipe, adaptation, patience",
-        "goals": "Développeur back-end Java"
+        "goals": "Développeur back-end Java",
+        "attack": "poêle dans la gueule"
     },
     {
         "name": "Fabien Rollet",
@@ -363,7 +384,8 @@
         "email": "fabrol47@gmail.com",
         "picture": "images/photos/profilepic33.jpg",
         "linkedin": "https://www.linkedin.com/in/fabien-rollet-ab69392a7/",
-        "github": "https://github.com/Gamarin0"
+        "github": "https://github.com/Gamarin0",
+        "attack": "Discretion"
     },
     {
         "name": "Quentin Tran Huu",
@@ -374,7 +396,8 @@
         "bio": "Je suis un touche-à-tout à l'esprit jovial. Déterminé à approfondir mes connaissances informatiques pour me faire ma place dans le monde de la Data.",
         "hardSkills": "Analyser, synthétiser, communiquer",
         "softSkills": "Patient, empathique, curieux",
-        "goals": "Au sortir de la formation, ma priorité sera d'acquérir de l'expérience professionnelle. Sur le long terme j'envisage de me spécialiser dans l'IA et le deep learning."
+        "goals": "Au sortir de la formation, ma priorité sera d'acquérir de l'expérience professionnelle. Sur le long terme j'envisage de me spécialiser dans l'IA et le deep learning.",
+        "attack": "inconnue"
     },
     {
         "name": "Elea Voliotis",
@@ -386,6 +409,7 @@
         "bio": "Je suis actuellement en alternance Java/Angular à la WildCodeSchool",
         "hardSkills": "Persévérante, appliquée, autonome",
         "softSkills": "Responsable, patiente, ponctuelle",
-        "goals": "Devenir une développeuse chevronnée. "
+        "goals": "Devenir une développeuse chevronnée. ",
+        "attack": ""
     }
 ]
