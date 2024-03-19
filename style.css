@@ -34,9 +34,7 @@ header {
     width: 100%;
     min-height: 70px;
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 nav {
@@ -45,7 +43,7 @@ nav {
     align-items: center;
 }
 
-.btnRetour {
+.btnRetourMobile {
     background-color: var(--secondary-color);
     border-radius: 15px;
     width: clamp(30px, 10%, 120px);
@@ -56,17 +54,16 @@ nav {
     max-height: 45px;
 }
 
-.btnRetour:hover {
+.btnRetourMobile:hover {
     opacity: 0.33;
 }
 
-a>img {
+.arrow_back {
     width: clamp(30px, 10%, 120px);
 }
 
-.retour {
+.btnRetourDesktop {
     display: none;
-    font-size: clamp(1rem, 2vw, 1.7rem);
 }
 
 .logoWCS {
@@ -232,14 +229,6 @@ button {
     height: clamp(40px, 5vh, 60px);
 }
 
-.buttonData:focus {
-    background-color: orange;
-}
-
-.buttonstaff:focus {
-    background-color: green!;
-}
-
 button>p {
     display: none;
 }
@@ -259,6 +248,27 @@ button>img {
         margin: 0 2rem;
     }
 
+    .btnRetourMobile {
+        display: none;
+    }
+
+    .btnRetourDesktop {
+        display: flex;
+        font-size: clamp(1rem, 2vw, 1.7rem);
+    }
+
+    .retour {
+        font-family: "Beleren-Bold";
+        font-size: clamp(1.2rem, 1vw, 1rem);
+        margin-top: 0;
+        padding-left: .5rem;
+    }
+    
+    .sparkles_light {
+        width: 1.1rem;
+        margin-top: -.3rem;
+    }
+
     label {
         width: 65%;
     }
@@ -269,7 +279,6 @@ button>img {
 
     button {
         margin-top: 1rem;
-        margin-bottom: 2rem;
     }
 
     button>p {
@@ -280,12 +289,12 @@ button>img {
         margin-top: 0rem;
         font-family: "Beleren-Bold"; /* à modifier si on crée une variable*/
         color: var(--text-color);
-        font-size: clamp(1.2rem, 2vw, 2rem);    }
+        font-size: clamp(1.2rem, 2vw, 2rem);
+        }
     
     .arrowUp{
         min-width: 60px;
     }
-
 
 }
 

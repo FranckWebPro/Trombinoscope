@@ -47,8 +47,11 @@ let logoTeam = document.querySelector(".logoTeam");
 
 const buttonData = document.getElementById("buttonData");
 let textButtonData = document.getElementById("textButtonData");
+// const main = document.querySelector("main");
+
 buttonData.addEventListener ("click", () => {
   locationCards.innerHTML = "";
+  locationCards.style.backgroundImage = "url('images/logopythonbackground.svg')";
   logoTeam.src = "images/logopython.svg";
   buttonData.style.backgroundColor = "#F7EFE0";
   textButtonData.style.color = "#3A3335";
@@ -59,11 +62,12 @@ buttonData.addEventListener ("click", () => {
   createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
 });
 
-
 const buttonJS = document.getElementById("buttonJS");
 let textButtonJS = document.getElementById("textButtonJS");
+
 buttonJS.addEventListener ("click", () => {
     locationCards.innerHTML = "";
+    locationCards.style.backgroundImage = "url('images/logoJSbackground.svg')";
     logoTeam.src = "images/logojs.svg";
     buttonJS.style.backgroundColor = "#F7EFE0";
     textButtonJS.style.color = "#3A3335";
@@ -76,8 +80,10 @@ buttonJS.addEventListener ("click", () => {
 
 const buttonStaff = document.getElementById("buttonStaff");
 let textButtonStaff = document.getElementById("textButtonStaff");
+
 buttonStaff.addEventListener ("click", () => {
    locationCards.innerHTML = "";
+   locationCards.style.backgroundImage = "url('images/logowildbackground.svg')";
    logoTeam.src = "images/logowildstaff.svg";
    buttonStaff.style.backgroundColor = "#F7EFE0";
    textButtonStaff.style.color = "#3A3335";
