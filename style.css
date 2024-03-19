@@ -92,13 +92,6 @@ main {
     transition-duration: 300ms;
 }
 
-.booster>img:hover {
-    transform: scale(1.5);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-}
-
 .sliderContainer {
     display: flex;
     align-items: center;
@@ -209,7 +202,7 @@ main>h2 {
 }
 
 .booster>img {
-    width: 10rem;
+    width: 15vw;
     filter: drop-shadow(0 0.25rem 0.25rem black);
 }
 
