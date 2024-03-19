@@ -97,8 +97,8 @@ buttonStaff.addEventListener("click", () => {
 
 
 /// LIEN DEPUIS PAGE D'ACCUEIL QUI NE FONCTIONNE PAS : 
-const boosterData = document.getElementById("boosterData");
+// const boosterData = document.getElementById("boosterData");
 
-boosterData.addEventListener("click", () => {
-  createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
-});
+// boosterData.addEventListener("click", () => {
+//     createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
+// });
