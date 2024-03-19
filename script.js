@@ -1,4 +1,4 @@
-import database from "./data.json" assert {type:'json'};
+import database from "./data.json" assert {type: 'json'};
 
 console.log(database);
 
@@ -6,11 +6,11 @@ console.log(database);
 
 let locationCards = document.getElementById("section-cards");
 
-function createElement (tag, parent, className = null) {
-const element = document.createElement(tag);
-element.classList.add(className);
-parent.appendChild(element);
-return element;
+function createElement(tag, parent, className = null) {
+  const element = document.createElement(tag);
+  element.classList.add(className);
+  parent.appendChild(element);
+  return element;
 }
 
 let card;
@@ -20,23 +20,23 @@ let cardLogo;
 let cardImgDiv;
 let cardImg;
 
-function createCard (teamName, linkBG, linkLogo) {
-   for (let i = 0 ; i < database.length ; i++) {
+function createCard(teamName, linkBG, linkLogo) {
+  for (let i = 0; i < database.length; i++) {
     if (database[i].team === teamName) {
-    card = createElement("div", locationCards, "card");
-    card.style.backgroundImage = linkBG;
-    cardHeader = createElement("div", card, "card-header");
-        // ce serait mieux de créer ici un header plutôt qu'une div mais header entre
-        // en conflit avec les propriétés CSS appliquées à tous les header 
-    cardName = createElement("p", cardHeader, "card-name");
-    cardName.innerText = database[i].name;
-    cardLogo = createElement("img", cardHeader, "card-logo");  
-    cardLogo.src = linkLogo;
-    cardImgDiv = createElement("div", card, "card-img-div");
-    cardImg = createElement("img", cardImgDiv, "card-img");
-    cardImg.src = database[i].picture;
+      card = createElement("div", locationCards, "card");
+      card.style.backgroundImage = linkBG;
+      cardHeader = createElement("div", card, "card-header");
+      // ce serait mieux de créer ici un header plutôt qu'une div mais header entre
+      // en conflit avec les propriétés CSS appliquées à tous les header 
+      cardName = createElement("p", cardHeader, "card-name");
+      cardName.innerText = database[i].name;
+      cardLogo = createElement("img", cardHeader, "card-logo");
+      cardLogo.src = linkLogo;
+      cardImgDiv = createElement("div", card, "card-img-div");
+      cardImg = createElement("img", cardImgDiv, "card-img");
+      cardImg.src = database[i].picture;
     }
-   }
+  }
 };
 
 
@@ -49,7 +49,7 @@ const buttonData = document.getElementById("buttonData");
 let textButtonData = document.getElementById("textButtonData");
 // const main = document.querySelector("main");
 
-buttonData.addEventListener ("click", () => {
+buttonData.addEventListener("click", () => {
   locationCards.innerHTML = "";
   locationCards.style.backgroundImage = "url('images/logopythonbackground.svg')";
   logoTeam.src = "images/logopython.svg";
@@ -65,34 +65,34 @@ buttonData.addEventListener ("click", () => {
 const buttonJS = document.getElementById("buttonJS");
 let textButtonJS = document.getElementById("textButtonJS");
 
-buttonJS.addEventListener ("click", () => {
-    locationCards.innerHTML = "";
-    locationCards.style.backgroundImage = "url('images/logoJSbackground.svg')";
-    logoTeam.src = "images/logojs.svg";
-    buttonJS.style.backgroundColor = "#F7EFE0";
-    textButtonJS.style.color = "#3A3335";
-    buttonData.style.backgroundColor = "#3A3335";
-    textButtonData.style.color = "#F7EFE0";
-    buttonStaff.style.backgroundColor = "#3A3335";
-    textButtonStaff.style.color = "#F7EFE0";
-    createCard("JS", "url('images/background-card-JS-small.png')", "images/logojs.svg");
+buttonJS.addEventListener("click", () => {
+  locationCards.innerHTML = "";
+  locationCards.style.backgroundImage = "url('images/logoJSbackground.svg')";
+  logoTeam.src = "images/logojs.svg";
+  buttonJS.style.backgroundColor = "#F7EFE0";
+  textButtonJS.style.color = "#3A3335";
+  buttonData.style.backgroundColor = "#3A3335";
+  textButtonData.style.color = "#F7EFE0";
+  buttonStaff.style.backgroundColor = "#3A3335";
+  textButtonStaff.style.color = "#F7EFE0";
+  createCard("JS", "url('images/background-card-JS-small.png')", "images/logojs.svg");
 });
 
 const buttonStaff = document.getElementById("buttonStaff");
 let textButtonStaff = document.getElementById("textButtonStaff");
 
-buttonStaff.addEventListener ("click", () => {
-   locationCards.innerHTML = "";
-   locationCards.style.backgroundImage = "url('images/logowildbackground.svg')";
-   logoTeam.src = "images/logowildstaff.svg";
-   buttonStaff.style.backgroundColor = "#F7EFE0";
-   textButtonStaff.style.color = "#3A3335";
-   buttonData.style.backgroundColor = "#3A3335";
-   textButtonData.style.color = "#F7EFE0";
-   buttonJS.style.backgroundColor = "#3A3335";
-   textButtonJS.style.color = "#F7EFE0";
-    createCard("Staff", "url('images/background-card-staff-small.png')", "images/logowildstaff.svg");
-  });
+buttonStaff.addEventListener("click", () => {
+  locationCards.innerHTML = "";
+  locationCards.style.backgroundImage = "url('images/logowildbackground.svg')";
+  logoTeam.src = "images/logowildstaff.svg";
+  buttonStaff.style.backgroundColor = "#F7EFE0";
+  textButtonStaff.style.color = "#3A3335";
+  buttonData.style.backgroundColor = "#3A3335";
+  textButtonData.style.color = "#F7EFE0";
+  buttonJS.style.backgroundColor = "#3A3335";
+  textButtonJS.style.color = "#F7EFE0";
+  createCard("Staff", "url('images/background-card-staff-small.png')", "images/logowildstaff.svg");
+});
 
 
 
@@ -100,5 +100,5 @@ buttonStaff.addEventListener ("click", () => {
 const boosterData = document.getElementById("boosterData");
 
 boosterData.addEventListener("click", () => {
-    createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
+  createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
 });
