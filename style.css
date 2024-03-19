@@ -223,6 +223,14 @@ button {
     height: clamp(40px, 5vh, 60px);
 }
 
+.buttonData:focus {
+    background-color: orange;
+}
+
+.buttonstaff:focus {
+    background-color: green!;
+}
+
 button>p {
     display: none;
 }
@@ -250,10 +258,19 @@ button>img {
         display: none;
     }
 
+    button {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
     button>p {
         display: inline-block;
         color: var(--text-color);
         text-align: center;
+        font-size: clamp(1.2rem, 2vw, 2rem);
+        margin-top: 0rem;
+        font-family: "Beleren-Bold"; /* à modifier si on crée une variable*/
+        color: var(--text-color);
         font-size: clamp(1.2rem, 2vw, 2rem);
     }
 
