@@ -84,20 +84,17 @@ main {
 }
 
 .booster>img {
-    width: 5rem;
+    width: 12rem;
     filter: drop-shadow(0 0.25rem 0.25rem black);
     transition-duration: 300ms;
-}
-
-.sliderContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* carousel */
 
 .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: auto;
     text-align: center;
 }
@@ -121,13 +118,18 @@ main {
 label {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 75%;
-    height: clamp(40px, 5vh, 60px);
+    justify-content: center;
+    height: clamp(40px, 5vw, 60px);
     border: var(--primary-color) solid 1px;
     border-radius: 15px;
-    margin: Auto;
+    margin-top: 2vw;
     overflow: hidden;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+
 }
 
 label>img {
@@ -159,10 +161,6 @@ p {
     text-align: center;
 }
 
-main {
-    background-color: var(--secondary-color);
-}
-
 ul {
     display: flex;
     justify-content: space-evenly;
@@ -179,12 +177,12 @@ main>h2 {
 
 }
 
-.sliderContainer {
+/* .sliderContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
+} */
 
 .boosterData .boosterJs .boosterStaff {
     display: flex;
@@ -196,11 +194,6 @@ main>h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.booster>img {
-    width: 15vw;
-    filter: drop-shadow(0 0.25rem 0.25rem black);
 }
 
 a>h2 {
@@ -239,6 +232,11 @@ button>img {
         margin: 0 2rem;
     }
 
+    nav {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
     .btnRetourMobile {
         display: none;
     }
@@ -254,7 +252,7 @@ button>img {
         margin-top: 0;
         padding-left: .5rem;
     }
-    
+
     .sparkles_light {
         width: 1.1rem;
         margin-top: -.3rem;
@@ -278,12 +276,13 @@ button>img {
         text-align: center;
         font-size: clamp(1.2rem, 2vw, 2rem);
         margin-top: 0rem;
-        font-family: "Beleren-Bold"; /* à modifier si on crée une variable*/
+        font-family: "Beleren-Bold";
+        /* à modifier si on crée une variable*/
         color: var(--text-color);
         font-size: clamp(1.2rem, 2vw, 2rem);
-        }
-    
-    .arrowUp{
+    }
+
+    .arrowUp {
         min-width: 60px;
     }
 
@@ -293,6 +292,10 @@ button>img {
 
     .slides {
         margin: 0.75rem;
+    }
+
+    .booster>img {
+        width: 15vw;
     }
 
     .slider {
