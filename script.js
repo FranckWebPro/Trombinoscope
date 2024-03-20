@@ -1,4 +1,5 @@
 import database from "./data.json" assert {type: 'json'};
+import { displayCard, closeCardWithX, closeCardDesktop } from "./zoom.js";
 
 console.log(database);
 
@@ -11,7 +12,7 @@ function createElement(tag, parent, className = null) {
   element.classList.add(className);
   parent.appendChild(element);
   return element;
-}
+};
 
 let card;
 let cardHeader;
@@ -38,6 +39,7 @@ function createCard(teamName) {
       cardImg.src = database[i].picture;
       cardAttack = createElement("p", card, "card-attack");
       cardAttack.innerText = `Attaque :\n${database[i].attack}`;
+      card.setAttribute('data-index', i); //ajout de l'index de la carte en attribut de donnée
     }
   }
 };
@@ -83,6 +85,8 @@ buttonData.addEventListener("click", () => {
   buttonAll.style.backgroundColor = "#3A3335";
   textButtonAll.style.color = "#F7EFE0";
   createCard("DATA");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
 });
 
 const buttonJS = document.getElementById("buttonJS");
@@ -101,6 +105,8 @@ buttonJS.addEventListener("click", () => {
   buttonAll.style.backgroundColor = "#3A3335";
   textButtonAll.style.color = "#F7EFE0";
   createCard("JS");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
 });
 
 const buttonStaff = document.getElementById("buttonStaff");
@@ -119,6 +125,8 @@ buttonStaff.addEventListener("click", () => {
   buttonAll.style.backgroundColor = "#3A3335";
   textButtonAll.style.color = "#F7EFE0";
   createCard("Staff");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
 });
 
 const buttonAll = document.getElementById("buttonAll");
@@ -141,8 +149,12 @@ buttonAll.addEventListener("click", () => {
 
 
 /// LIEN DEPUIS PAGE D'ACCUEIL QUI NE FONCTIONNE PAS : 
-const boosterData = document.getElementById("boosterData");
+// const boosterData = document.getElementById("boosterData");
 
-boosterData.addEventListener("click", () => {
-  createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
-});
+// boosterData.addEventListener("click", () => {
+//     createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
+//   });
+
+
+closeCardWithX();
+closeCardDesktop();
