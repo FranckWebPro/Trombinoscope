@@ -32,20 +32,22 @@ body {
 header {
     background-color: var(--primary-color);
     width: 100%;
-    min-height: 70px;
-    padding: 1rem;
+    height: 80px;
+    padding: 0 1rem;
+    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.btnRetour {
+.btnRetourMobile {
     background-color: var(--secondary-color);
     border-radius: 15px;
     width: clamp(30px, 10%, 120px);
@@ -54,19 +56,19 @@ nav {
     justify-content: center;
     padding: .5rem;
     max-height: 45px;
+    transition: opacity .3s;
 }
 
-.btnRetour:hover {
+.btnRetourMobile:hover {
     opacity: 0.33;
 }
 
-a>img {
+.arrow_back {
     width: clamp(30px, 10%, 120px);
 }
 
-.retour {
+.btnRetourDesktop {
     display: none;
-    font-size: clamp(1rem, 2vw, 1.7rem);
 }
 
 .logoWCS {
@@ -79,52 +81,42 @@ a>img {
 
 .logoTeam {
     width: clamp(30px, 10%, 120px);
+    max-height: 60px;
 }
 
 main {
-    padding: 1rem;
     background-color: var(--secondary-color);
     gap: 1rem;
 }
 
 .booster>img {
-    width: 5rem;
+    width: 12rem;
     filter: drop-shadow(0 0.25rem 0.25rem black);
-}
-
-.booster>img:hover {
-    transform: scale(1.5);
-    margin: 3rem;
-    padding-bottom: 1rem;
-}
-
-.sliderContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition-duration: 300ms;
 }
 
 /* carousel */
 
 .sliderContainer {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
     text-align: center;
-    overflow: hidden;
 }
 
 .slider {
     display: flex;
-
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-
+    overflow-x: scroll;
+    scroll-snap-type: inline mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+
 }
 
-
-
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* fin carousel */
 
@@ -132,13 +124,18 @@ main {
 label {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 75%;
-    height: clamp(40px, 5vh, 60px);
+    justify-content: center;
+    height: clamp(40px, 5vw, 60px);
     border: var(--primary-color) solid 1px;
     border-radius: 15px;
-    margin: Auto;
+    margin-top: 2vw;
     overflow: hidden;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+
 }
 
 label>img {
@@ -166,13 +163,7 @@ a {
 
 p {
     font-family: var(--text-font);
-    margin-top: 2rem;
     text-align: center;
-}
-
-main {
-    margin: 0 1rem;
-    background-color: var(--secondary-color);
 }
 
 ul {
@@ -191,12 +182,12 @@ main>h2 {
 
 }
 
-.sliderContainer {
+/* .sliderContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
+} */
 
 .boosterData .boosterJs .boosterStaff {
     display: flex;
@@ -208,11 +199,6 @@ main>h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.booster>img {
-    width: 10rem;
-    filter: drop-shadow(0 0.25rem 0.25rem black);
 }
 
 a>h2 {
@@ -251,6 +237,32 @@ button>img {
         margin: 0 2rem;
     }
 
+    nav {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .btnRetourMobile {
+        display: none;
+    }
+
+    .btnRetourDesktop {
+        display: flex;
+        font-size: clamp(1rem, 2vw, 1.7rem);
+    }
+
+    .retour {
+        font-family: "Beleren-Bold";
+        font-size: clamp(1.2rem, 1vw, 1rem);
+        margin-top: 0;
+        padding-left: .5rem;
+    }
+
+    .sparkles_light {
+        width: 1.1rem;
+        margin-top: -.3rem;
+    }
+
     label {
         width: 65%;
     }
@@ -259,16 +271,24 @@ button>img {
         display: none;
     }
 
+    button {
+        margin-top: 1rem;
+    }
+
     button>p {
         display: inline-block;
         color: var(--text-color);
-        text-align: center;
-        font-size: clamp(1.2rem, 2vw, 2rem);    }
-    
-    .arrowUp{
-        min-width: 60px;
+        font-size: clamp(1.2rem, 2vw, 2rem);
+        margin-top: 0rem;
+        font-family: "Beleren-Bold";
+        /* à modifier si on crée une variable*/
+        color: var(--text-color);
+        font-size: clamp(1.2rem, 2vw, 2rem);
     }
 
+    .arrowUp {
+        min-width: 60px;
+    }
 
 }
 
@@ -276,6 +296,21 @@ button>img {
 
     .slides {
         margin: 0.75rem;
+    }
+
+    .booster>img {
+        width: 15vw;
+    }
+
+    .slider {
+        overflow-x: visible;
+    }
+
+    .booster>img:hover {
+        transform: scale(1.5);
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+        padding-bottom: 1rem;
     }
 
 }
