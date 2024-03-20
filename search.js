@@ -16,7 +16,7 @@ for (let i = 0; i < database.length; i++) {
 
 }
 
-// CA MARCHE!!!!!!!!!!!!!!!!
+// AJOUTER SI SEARCH EMPTY TOUTES LES CARTES S'affichent: all??!!!!!!!!!!!!!!!!
 
 
 
