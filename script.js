@@ -1,5 +1,5 @@
 import database from "./data.json" assert {type: 'json'};
-import { displayCard, closeCard } from "./zoom.js";
+import { displayCard, closeCardWithX, closeCardDesktop } from "./zoom.js";
 
 console.log(database);
 
@@ -110,4 +110,5 @@ buttonStaff.addEventListener("click", () => {
 //   });
 
 
-closeCard();
+closeCardWithX();
+closeCardDesktop();

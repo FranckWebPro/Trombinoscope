@@ -32,12 +32,16 @@ body {
 header {
     background-color: var(--primary-color);
     width: 100%;
-    min-height: 70px;
-    padding: 1rem;
+    height: 80px;
+    padding: 0 1rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,6 +81,7 @@ nav {
 
 .logoTeam {
     width: clamp(30px, 10%, 120px);
+    max-height: 60px;
 }
 
 main {
