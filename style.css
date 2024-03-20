@@ -214,7 +214,7 @@ button {
     color: var(--secondary-color);
     border-radius: 15px;
     padding: 0.25rem;
-    width: clamp(80px, 25vw, 300px);
+    width: clamp(80px, 20vw, 300px);
     height: clamp(40px, 5vh, 60px);
 }
 
