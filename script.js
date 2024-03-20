@@ -1,4 +1,5 @@
 import database from "./data.json" assert {type: 'json'};
+import { displayCard, closeCard } from "./zoom.js";
 
 console.log(database);
 
@@ -11,7 +12,7 @@ function createElement(tag, parent, className = null) {
   element.classList.add(className);
   parent.appendChild(element);
   return element;
-}
+};
 
 let card;
 let cardHeader;
@@ -35,6 +36,7 @@ function createCard(teamName, linkBG, linkLogo) {
       cardImgDiv = createElement("div", card, "card-img-div");
       cardImg = createElement("img", cardImgDiv, "card-img");
       cardImg.src = database[i].picture;
+      card.setAttribute('data-index', i); //ajout de l'index de la carte en attribut de donnée
     }
   }
 };
@@ -60,6 +62,8 @@ buttonData.addEventListener("click", () => {
   buttonStaff.style.backgroundColor = "#3A3335";
   textButtonStaff.style.color = "#F7EFE0";
   createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
 });
 
 const buttonJS = document.getElementById("buttonJS");
@@ -76,6 +80,8 @@ buttonJS.addEventListener("click", () => {
   buttonStaff.style.backgroundColor = "#3A3335";
   textButtonStaff.style.color = "#F7EFE0";
   createCard("JS", "url('images/background-card-JS-small.png')", "images/logojs.svg");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
 });
 
 const buttonStaff = document.getElementById("buttonStaff");
@@ -92,13 +98,16 @@ buttonStaff.addEventListener("click", () => {
   buttonJS.style.backgroundColor = "#3A3335";
   textButtonJS.style.color = "#F7EFE0";
   createCard("Staff", "url('images/background-card-staff-small.png')", "images/logowildstaff.svg");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
 });
-
-
 
 /// LIEN DEPUIS PAGE D'ACCUEIL QUI NE FONCTIONNE PAS : 
 // const boosterData = document.getElementById("boosterData");
 
 // boosterData.addEventListener("click", () => {
 //     createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
-// });
+//   });
+
+
+closeCard();
