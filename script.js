@@ -1,6 +1,5 @@
 import database from "./data.json" assert {type:'json'};
-
-console.log(database);
+// import {toto} from "./search.js"
 
 /// Création des cartes - CODE EN COURS DE CREATION
 /// (fonctionne mais obligé de rafraîchir la page pour changer d'équipe)
@@ -64,3 +63,6 @@ boosterData.addEventListener("click", () => {
 });
 
 
+
+// export function createCard(){} 
+// export default locationCards()
