@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     padding: 3rem 1rem 1rem 1rem;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -67,15 +67,17 @@
     object-fit: cover;
 }
 
-.zoomedCardAttack {
+.attackContainer {
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.zoomedCardAttack>p {
+.zoomedCardAttack {
     font-size: .8rem;
+    text-align: center;
+    max-width: 90%;
 }
 
 .zoomedCardInfo {
@@ -154,7 +156,27 @@
         gap: 2rem;
     }
 
-    .zoomedCardAttack>p {
+    .zoomedCardInfo>p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .zoomedCardInfo>.cardEmail {
+        text-align: center;
+    }
+
+    .zoomedCardAttack {
         font-size: 1.2rem;
+    }
+}
+
+.closeButton {
+    top: 2rem;
+    right: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .zoomBlurBackground {
+        padding: 8% 10%;
     }
 }

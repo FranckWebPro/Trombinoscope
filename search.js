@@ -22,8 +22,6 @@ searchInput.addEventListener ("change", (event) => {
   });
 });
 
-
-
 // si une lettre est trouvée, on affiche les cartes
 // export function toto(){
 // }
