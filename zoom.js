@@ -18,10 +18,11 @@ const cardGithub = document.querySelector('.cardGithub');
 const cardGoals = document.querySelector('.cardGoals');
 
 function filterUndefined(element, dataToFilter, property) {
-    if(dataToFilter === undefined) {
-        element.style.display = 'none';
-    } else {
+    if(dataToFilter !== undefined) {
+        element.style.display = 'flex';
         element[property] = dataToFilter;
+    } else if (dataToFilter === undefined) {
+        element.style.display = 'none';
     }
 };
 
@@ -45,8 +46,8 @@ export const displayCard = (cardsToDisplay) => {
             zoomDisplay.style.display = 'flex';
             cardName.innerText = database[id].name;
             cardImg.src = database[id].picture;
+            zoomedCardAttack.innerText = `Attaque : ${database[id].attack}`;
             teamCardToDisplay(id);
-            filterUndefined(zoomedCardAttack, database[id].attack, "innerText");
             filterUndefined(cardBio, database[id].bio, "innerText");
             filterUndefined(cardHard, database[id].hardSkills, "innerText");
             filterUndefined(cardSoft, database[id].softSkills, "innerText");
