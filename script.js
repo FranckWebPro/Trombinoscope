@@ -19,26 +19,47 @@ let cardName;
 let cardLogo;
 let cardImgDiv;
 let cardImg;
+let cardAttack;
 
-function createCard(teamName, linkBG, linkLogo) {
+function createCard(teamName) {
   for (let i = 0; i < database.length; i++) {
     if (database[i].team === teamName) {
       card = createElement("div", locationCards, "card");
-      card.style.backgroundImage = linkBG;
+      card.style.backgroundImage = database[i].background;
       cardHeader = createElement("div", card, "card-header");
       // ce serait mieux de créer ici un header plutôt qu'une div mais header entre
       // en conflit avec les propriétés CSS appliquées à tous les header 
       cardName = createElement("p", cardHeader, "card-name");
       cardName.innerText = database[i].name;
       cardLogo = createElement("img", cardHeader, "card-logo");
-      cardLogo.src = linkLogo;
+      cardLogo.src = database[i].logo;
       cardImgDiv = createElement("div", card, "card-img-div");
       cardImg = createElement("img", cardImgDiv, "card-img");
       cardImg.src = database[i].picture;
+      cardAttack = createElement("p", card, "card-attack");
+      cardAttack.innerText = `Attaque :\n${database[i].attack}`;
     }
   }
 };
 
+function createAll() {
+  for (let i = 0; i < database.length; i++) {
+    card = createElement("div", locationCards, "card");
+    card.style.backgroundImage = database[i].background;
+    cardHeader = createElement("div", card, "card-header");
+    // ce serait mieux de créer ici un header plutôt qu'une div mais header entre
+    // en conflit avec les propriétés CSS appliquées à tous les header 
+    cardName = createElement("p", cardHeader, "card-name");
+    cardName.innerText = database[i].name;
+    cardLogo = createElement("img", cardHeader, "card-logo");
+    cardLogo.src = database[i].logo;
+    cardImgDiv = createElement("div", card, "card-img-div");
+    cardImg = createElement("img", cardImgDiv, "card-img");
+    cardImg.src = database[i].picture;
+    cardAttack = createElement("p", card, "card-attack");
+    cardAttack.innerText = `Attaque :\n${database[i].attack}`;
+  }
+};
 
 
 // ANIMATION DES BOUTONS (A REFACTORISER)
@@ -59,7 +80,9 @@ buttonData.addEventListener("click", () => {
   textButtonJS.style.color = "#F7EFE0";
   buttonStaff.style.backgroundColor = "#3A3335";
   textButtonStaff.style.color = "#F7EFE0";
-  createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
+  buttonAll.style.backgroundColor = "#3A3335";
+  textButtonAll.style.color = "#F7EFE0";
+  createCard("DATA");
 });
 
 const buttonJS = document.getElementById("buttonJS");
@@ -75,7 +98,9 @@ buttonJS.addEventListener("click", () => {
   textButtonData.style.color = "#F7EFE0";
   buttonStaff.style.backgroundColor = "#3A3335";
   textButtonStaff.style.color = "#F7EFE0";
-  createCard("JS", "url('images/background-card-JS-small.png')", "images/logojs.svg");
+  buttonAll.style.backgroundColor = "#3A3335";
+  textButtonAll.style.color = "#F7EFE0";
+  createCard("JS");
 });
 
 const buttonStaff = document.getElementById("buttonStaff");
@@ -91,9 +116,28 @@ buttonStaff.addEventListener("click", () => {
   textButtonData.style.color = "#F7EFE0";
   buttonJS.style.backgroundColor = "#3A3335";
   textButtonJS.style.color = "#F7EFE0";
-  createCard("Staff", "url('images/background-card-staff-small.png')", "images/logowildstaff.svg");
+  buttonAll.style.backgroundColor = "#3A3335";
+  textButtonAll.style.color = "#F7EFE0";
+  createCard("Staff");
 });
 
+const buttonAll = document.getElementById("buttonAll");
+let textButtonAll = document.getElementById("textButtonAll");
+
+buttonAll.addEventListener("click", () => {
+  locationCards.innerHTML = "";
+  locationCards.style.backgroundImage = "url('images/Logo-Wildcards-light.svg')";
+  logoTeam.src = "images/Logo-Wildcards-light.svg";
+  buttonAll.style.backgroundColor = "#F7EFE0";
+  textButtonAll.style.color = "#3A3335";
+  buttonStaff.style.backgroundColor = "#3A3335";
+  textButtonStaff.style.color = "#F7EFE0";
+  buttonData.style.backgroundColor = "#3A3335";
+  textButtonData.style.color = "#F7EFE0";
+  buttonJS.style.backgroundColor = "#3A3335";
+  textButtonJS.style.color = "#F7EFE0";
+  createAll();
+});
 
 
 /// LIEN DEPUIS PAGE D'ACCUEIL QUI NE FONCTIONNE PAS : 
