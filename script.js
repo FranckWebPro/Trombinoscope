@@ -19,6 +19,7 @@ let cardName;
 let cardLogo;
 let cardImgDiv;
 let cardImg;
+let cardAttack;
 
 function createCard(teamName, linkBG, linkLogo) {
   for (let i = 0; i < database.length; i++) {
@@ -35,6 +36,8 @@ function createCard(teamName, linkBG, linkLogo) {
       cardImgDiv = createElement("div", card, "card-img-div");
       cardImg = createElement("img", cardImgDiv, "card-img");
       cardImg.src = database[i].picture;
+      cardAttack = createElement("p", card, "card-attack");
+      cardAttack.innerText = `Attaque :\n${database[i].attack}`;
     }
   }
 };
@@ -47,7 +50,8 @@ let logoTeam = document.querySelector(".logoTeam");
 
 const buttonData = document.getElementById("buttonData");
 let textButtonData = document.getElementById("textButtonData");
-// const main = document.querySelector("main");
+const divLogoButtonData = document.getElementById("logoButtonData");
+const divLogoButtonSparkle = document.getElementById("logoButtonSparkle");
 
 buttonData.addEventListener("click", () => {
   locationCards.innerHTML = "";
@@ -59,7 +63,21 @@ buttonData.addEventListener("click", () => {
   textButtonJS.style.color = "#F7EFE0";
   buttonStaff.style.backgroundColor = "#3A3335";
   textButtonStaff.style.color = "#F7EFE0";
+  // const logoButtonData = createElement("img", divLogoButtonData, "logo-button");
+  // logoButtonData.src = "images/logopython.svg"; 
+  // const logoButtonSparkle = createElement("img", divLogoButtonSparkle, "logo-button-sparkle"); 
+  // logoButtonSparkle.src = "images/sparkles-dark.svg";
+  /*problème ci-dessus : à chaque fois quon clique sur le bouton Data, un logo supplémentaire s'affiche.
+  peut-être qu'il y a moyen de faire un autre addEventListener pour un clic unique sur Data*/ 
+  // quand c'est cliqué
   createCard("DATA", "url('images/Background-card-Data-small.png')", "images/logopython.svg");
+});
+
+buttonData.addEventListener("click", { once: true }, () => {
+  const logoButtonData = createElement("img", divLogoButtonData, "logo-button");
+  logoButtonData.src = "images/logopython.svg"; 
+  const logoButtonSparkle = createElement("img", divLogoButtonSparkle, "logo-button-sparkle"); 
+  logoButtonSparkle.src = "images/sparkles-dark.svg";
 });
 
 const buttonJS = document.getElementById("buttonJS");

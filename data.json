@@ -9,7 +9,8 @@
         "bio": "J'aime aller au bout des choses - cowabunga!",
         "hardSkills": "Dormir, boire du café",
         "softSkills": "Joyeux, honnête, bienveillant",
-        "attack": "Fatal-jouet"
+        "attack": "Fatal-jouet",
+        "background": "url('images/background-card-JS-small.png')"
     },
     {
         "name": "Marie-Garance Berthe",
