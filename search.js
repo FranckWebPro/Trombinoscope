@@ -10,6 +10,7 @@ import { locationCards } from "./script.js"
 // fonction create
 
 // j'écoute l'event
+
 const searchInput = document.querySelector("input");
 searchInput.addEventListener("input", (event) => {
   const searchValue = event.target.value;
@@ -19,8 +20,8 @@ searchInput.addEventListener("input", (event) => {
       const index = database.indexOf(person);
       createSearch(index);
     }
+    })
   });
-});
 
 
 // const toto = ["titi", "tata", "tutu"];
@@ -28,10 +29,17 @@ searchInput.addEventListener("input", (event) => {
 // console.log(result);
 
 // si une lettre est trouvée, on affiche les cartes
+
 // export function toto(){
+
 // }
+
 // addEventListener
+
 // innerHTML
+
 // for tout les elements de DB
+
 // si valeur input "include" DBname
+
 // createcard[DB(i)]
