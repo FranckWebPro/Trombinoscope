@@ -5,7 +5,7 @@ console.log(database);
 
 /// Création des cartes - CODE EN COURS DE CREATION
 
-let locationCards = document.getElementById("section-cards");
+export let locationCards = document.getElementById("section-cards");
 
 function createElement(tag, parent, className = null) {
   const element = document.createElement(tag);
@@ -22,7 +22,7 @@ let cardImgDiv;
 let cardImg;
 let cardAttack;
 
-function createCard(teamName) {
+export function createCard(teamName) {
   for (let i = 0; i < database.length; i++) {
     if (database[i].team === teamName) {
       card = createElement("div", locationCards, "card");
@@ -44,7 +44,25 @@ function createCard(teamName) {
   }
 };
 
-function createAll() {
+export function createSearch(index) {
+  card = createElement("div", locationCards, "card");
+  card.style.backgroundImage = database[index].background;
+  cardHeader = createElement("div", card, "card-header");
+  // ce serait mieux de créer ici un header plutôt qu’une div mais header entre
+  // en conflit avec les propriétés CSS appliquées à tous les header
+  cardName = createElement("p", cardHeader, "card-name");
+  cardName.innerText = database[index].name;
+  cardLogo = createElement("img", cardHeader, "card-logo");
+  cardLogo.src = database[index].logo;
+  cardImgDiv = createElement("div", card, "card-img-div");
+  cardImg = createElement("img", cardImgDiv, "card-img");
+  cardImg.src = database[index].picture;
+  cardAttack = createElement("p", card, "card-attack");
+  cardAttack.innerText = `Attaque :\n${database[index].attack}`;
+  card.setAttribute('data-index', index);
+}
+
+export function createAll() {
   for (let i = 0; i < database.length; i++) {
     card = createElement("div", locationCards, "card");
     card.style.backgroundImage = database[i].background;
@@ -60,6 +78,7 @@ function createAll() {
     cardImg.src = database[i].picture;
     cardAttack = createElement("p", card, "card-attack");
     cardAttack.innerText = `Attaque :\n${database[i].attack}`;
+    card.setAttribute('data-index', i);
   }
 };
 
@@ -145,6 +164,8 @@ buttonAll.addEventListener("click", () => {
   buttonJS.style.backgroundColor = "#3A3335";
   textButtonJS.style.color = "#F7EFE0";
   createAll();
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
 });
 
 
