@@ -5,7 +5,8 @@ console.log(database);
 
 /// Création des cartes - CODE EN COURS DE CREATIONa
 
-export let locationCards = document.getElementById("section-cards");
+const main = document.getElementById('main');
+export const locationCards = document.getElementById("section-cards");
 
 function createElement(tag, parent, className = null) {
   const element = document.createElement(tag);
@@ -78,7 +79,7 @@ export function createAll() {
     cardImg.src = database[i].picture;
     cardAttack = createElement("p", card, "card-attack");
     cardAttack.innerText = `Attaque :\n${database[i].attack}`;
-    card.setAttribute('data-index', i);
+    card.setAttribute('data-index', i); //ajout de l'index de la carte en attribut de donnée
   }
 };
 
@@ -133,11 +134,11 @@ function responsiveButton (logoButton, logoSparkle) {
 
 buttonData.addEventListener("click", () => {
   locationCards.innerHTML = "";
+  main.style.backgroundImage = "url('images/logopythonbackground.svg')";
   logoButtonData.src = "images/logopython.svg"; 
   // logoButtonData.style.display = "block"; 
   logoButtonSparkle.src = "images/sparkles-dark.svg";
   // logoButtonSparkle.style.display = "block"; 
-  locationCards.style.backgroundImage = "url('images/logopythonbackground.svg')";
   logoTeam.src = "images/logopython.svg";
   buttonData.style.backgroundColor = "#F7EFE0";
   textButtonData.style.color = "#3A3335";
@@ -164,7 +165,7 @@ buttonData.addEventListener("click", () => {
 
 buttonJS.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  locationCards.style.backgroundImage = "url('images/logoJSbackground.svg')";
+  main.style.backgroundImage = "url('images/logoJSbackground.svg')";
   logoTeam.src = "images/logojs.svg";
   logoButtonJS.src = "images/logojs.svg"; 
   logoButtonSparkleJS.src = "images/sparkles-dark.svg";
@@ -193,7 +194,7 @@ buttonJS.addEventListener("click", () => {
 
 buttonStaff.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  locationCards.style.backgroundImage = "url('images/logowildbackground.svg')";
+  main.style.backgroundImage = "url('images/logowildbackground.svg')";
   logoTeam.src = "images/logowildstaff.svg";
   logoButtonStaff.src = "images/logowildstaff.svg"; 
   // logoButtonData.style.display = "block"; 
@@ -224,7 +225,7 @@ buttonStaff.addEventListener("click", () => {
 
 buttonAll.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  locationCards.style.backgroundImage = "url('images/Logo-Wildcards-light.svg')";
+  main.style.backgroundImage = "url('images/Logo-Wildcards-light.svg')";
   logoTeam.src = "images/Logo-Wildcards-light.svg";
   logoButtonAll.src = "images/Logo-wildcards-dark.svg"; 
   // logoButtonData.style.display = "block"; 
