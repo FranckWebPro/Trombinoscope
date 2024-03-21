@@ -1,4 +1,4 @@
-import database from "./data.json" with {type: 'json'};
+import database from "./data.json" assert {type: 'json'};
 import { displayCard, closeCardWithX, closeCardDesktop } from "./zoom.js";
 
 const main = document.getElementById('main');

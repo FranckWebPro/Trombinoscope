@@ -73,7 +73,7 @@ nav {
 }
 
 .logoWCS {
-    width: clamp(60px, 30%, 200px);
+    width: clamp(60px, 100%, 200px);
 }
 
 .logoMain {
