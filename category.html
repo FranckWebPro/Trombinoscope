@@ -17,19 +17,19 @@
     <!-- Header -->
     <header>
         <nav>
-            <a href="index.html" class="btnRetourMobile">
+            <a href="index.html" class="backButtonMobile">
                 <img src="images/arrow-left-svgrepo-com.svg" class="arrow_back">
             </a>
-            <a href="index.html" class="btnRetourDesktop">
+            <a href="index.html" class="backButtonDesktop">
                 <img src="images/sparkles-light.svg" class="sparkles_light">
-                <p class="retour">RETOUR</p>
+                <p class="backButton">RETOUR</p>
             </a>
             <img src="images/logowildCard.svg" alt="logo with the name of the website written" class="logoWCS">
             <img src="images/logopython.svg" class="logoTeam" alt="logo team">
         </nav>
     </header>
     <!-- main content -->
-    <main>
+    <main id="main">
         <section class="searchBar">
             <label>
                 <!-- Création conditions loupe: <input type="search" class="searchInput" name="term" autocomplete="off" placeholder="Search..." id="search-input"> -->
@@ -37,40 +37,43 @@
                 <input type="search" name="search" autocomplete="off" placeholder=" Taper un nom">
                 <img src="images/search-svgrepo-com.svg" alt="bouton rechercher">
             </label>
+            <!-- Bouton de navigation -->
+            <ul>
+                <li>
+                    <button id="buttonData">
+                        <p id="textButtonData">DATA</p>
+                        <img alt="logo of Python, for DATA" src="images/logopython.svg" class="dataLogo">
+                        <!--ajouter le lien-->
+                    </button>
+
+                </li>
+                <li>
+                    <button id="buttonJS">
+                        <p id="textButtonJS">JAVASCRIPT</p>
+                        <img alt="logo of JavaScript, for Web developers" src="images/logojs.svg"
+                            class="javascriptLogo">
+                        <!--ajouter le lien-->
+                    </button>
+
+                </li>
+                <li>
+                    <button id="buttonStaff">
+                        <p id="textButtonStaff">STAFF</p>
+                        <img alt="logo of Wild Code School, for Staff" src="images/logowildstaff.svg" class="staffLogo">
+                        <!--ajouter le lien-->
+                    </button>
+
+                </li>
+                <li>
+                    <button id="buttonAll">
+                        <p id="textButtonAll">ALL</p>
+                        <img alt="logo of WildCardS" src="images/Logo-Wildcards-light.svg" class="allLogo">
+                    </button>
+                </li>
+            </ul>
         </section>
 
-        <!-- Bouton de navigation -->
-        <ul>
-            <li>
-                <button id="buttonData">
-                    <p id="textButtonData">DATA</p>
-                    <img alt="logo of Python, for DATA" src="images/logopython.svg" class="dataLogo">
-                    <!--ajouter le lien-->
-                </button>
 
-            </li>
-            <li>
-                <button id="buttonJS">
-                    <p id="textButtonJS">JAVASCRIPT</p>
-                    <img alt="logo of JavaScript, for Web developers" src="images/logojs.svg" class="javascriptLogo">
-                    <!--ajouter le lien-->
-                </button>
-
-            </li>
-            <li>
-                <button id="buttonStaff">
-                    <p id="textButtonStaff">STAFF</p>
-                    <img alt="logo of Wild Code School, for Staff" src="images/logowildstaff.svg" class="staffLogo">
-                    <!--ajouter le lien-->
-                </button>
-
-            </li>
-            <li>
-                <button id="buttonAll">
-                    <p id="textButtonAll">ALL</p>
-                </button>
-            </li>
-        </ul>
         <!-- Grille de cartes -->
         <section id="section-cards">
             <!-- URL DE LA FLECHE CI-DESSOUS A CHANGER
@@ -85,8 +88,8 @@
                         <p class="zoomedCardName"></p>
                         <img src="" class="zoomedCardLogo">
                     </div>
-                    <div class="zoomedCardImgContainer"><img src="images/photos/profilepic8.jpg"
-                            class="zoomedCardImg"></div>
+                    <div class="zoomedCardImgContainer"><img src="images/photos/profilepic8.jpg" class="zoomedCardImg">
+                    </div>
                     <div class="attackContainer">
                         <p class="zoomedCardAttack"></p>
                     </div>

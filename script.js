@@ -5,7 +5,8 @@ console.log(database);
 
 /// Création des cartes - CODE EN COURS DE CREATION
 
-let locationCards = document.getElementById("section-cards");
+const main = document.getElementById('main');
+const locationCards = document.getElementById("section-cards");
 
 function createElement(tag, parent, className = null) {
   const element = document.createElement(tag);
@@ -60,6 +61,7 @@ function createAll() {
     cardImg.src = database[i].picture;
     cardAttack = createElement("p", card, "card-attack");
     cardAttack.innerText = `Attaque :\n${database[i].attack}`;
+    card.setAttribute('data-index', i); //ajout de l'index de la carte en attribut de donnée
   }
 };
 
@@ -74,7 +76,7 @@ let textButtonData = document.getElementById("textButtonData");
 
 buttonData.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  locationCards.style.backgroundImage = "url('images/logopythonbackground.svg')";
+  main.style.backgroundImage = "url('images/logopythonbackground.svg')";
   logoTeam.src = "images/logopython.svg";
   buttonData.style.backgroundColor = "#F7EFE0";
   textButtonData.style.color = "#3A3335";
@@ -94,7 +96,7 @@ let textButtonJS = document.getElementById("textButtonJS");
 
 buttonJS.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  locationCards.style.backgroundImage = "url('images/logoJSbackground.svg')";
+  main.style.backgroundImage = "url('images/logoJSbackground.svg')";
   logoTeam.src = "images/logojs.svg";
   buttonJS.style.backgroundColor = "#F7EFE0";
   textButtonJS.style.color = "#3A3335";
@@ -114,7 +116,7 @@ let textButtonStaff = document.getElementById("textButtonStaff");
 
 buttonStaff.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  locationCards.style.backgroundImage = "url('images/logowildbackground.svg')";
+  main.style.backgroundImage = "url('images/logowildbackground.svg')";
   logoTeam.src = "images/logowildstaff.svg";
   buttonStaff.style.backgroundColor = "#F7EFE0";
   textButtonStaff.style.color = "#3A3335";
@@ -134,7 +136,7 @@ let textButtonAll = document.getElementById("textButtonAll");
 
 buttonAll.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  locationCards.style.backgroundImage = "url('images/Logo-Wildcards-light.svg')";
+  main.style.backgroundImage = "url('images/Logo-Wildcards-light.svg')";
   logoTeam.src = "images/Logo-Wildcards-light.svg";
   buttonAll.style.backgroundColor = "#F7EFE0";
   textButtonAll.style.color = "#3A3335";
@@ -145,6 +147,8 @@ buttonAll.addEventListener("click", () => {
   buttonJS.style.backgroundColor = "#3A3335";
   textButtonJS.style.color = "#F7EFE0";
   createAll();
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
 });
 
 

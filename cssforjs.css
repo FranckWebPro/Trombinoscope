@@ -4,12 +4,7 @@
     align-items: center;
     gap: 1rem;
     padding-top: 5rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-    background-attachment: fixed;
 }
-
 
 .card {
     width: 250px;
@@ -19,6 +14,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
+    transition: all .3s;
+}
+
+.card:hover {
+    scale: 1.05;
+    box-shadow: 4px 4px 8px 4px grey;
+    cursor: pointer;
 }
 
 .card-header {
