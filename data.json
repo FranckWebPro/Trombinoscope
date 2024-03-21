@@ -45,7 +45,7 @@
         "name": "Anna-Gael Bonnet",
         "team": "DATA",
         "picture": "images/photos/profilepic4.jpg",
-        "attack": "Inconnue",
+        "attack": "Super-Maman",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -73,7 +73,7 @@
         "hardSkills": "Mathématiques, sciences humaines, sciences dures",
         "softSkills": "Aucun haha!",
         "goals": "Je vise le minimum d'argent nécessaire à la survie avec le moins de temps possible de travail!",
-        "attack": "Flemmardise",
+        "attack": "Flemme",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -101,7 +101,7 @@
         "hardSkills": "Dynamique, concis et efficace",
         "softSkills": "Pédagogue, sociable et bienveillant",
         "goals": "Devenir DATA Analyst, puis DATA Scientist",
-        "attack": "Inconnue",
+        "attack": "Salutations",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -218,7 +218,7 @@
         "hardSkills": "Animer, gérer, accueillir",
         "softSkills": "Communication, empathie, calme",
         "goals": "Travailler dans le domaine de la DATA.",
-        "attack": "Inconnue",
+        "attack": "Pleine lucarne",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -244,7 +244,7 @@
         "hardSkills": "Travailler en équipe, gestion de projet, suivi des indicateurs",
         "softSkills": "Adaptabilité, pédagogue et être à l'écoute",
         "goals": "Travailler dans un domaine combinant la data et la logistique !",
-        "attack": "inconnue",
+        "attack": "Force gentille",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -283,7 +283,7 @@
         "picture": "images/photos/profilepic21.jpg",
         "bio": "Passionnée par la Data, je cherche à acquérir des nouvelles compétences dans ce domaine.",
         "goals": "Apprendre et évoluer ",
-        "attack": "inconnue",
+        "attack": "Cocktail",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -327,7 +327,7 @@
         "hardSkills": "Esprit d’analyse et capacité à prendre des décisions, adaptabilité",
         "softSkills": "Sens du relationnel, esprit d’équipe, autonomie",
         "goals": "Après la formation de Data Analyst, je souhaite trouver un poste dans lequel je pourrais allier mon expérience professionnelle et les compétences acquises durant ces 5 mois de formation. ",
-        "attack": "inconnue",
+        "attack": "Client content",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -369,7 +369,7 @@
         "bio": "Je suis gentille et souriante ",
         "hardSkills": "Savoir utiliser des logiciels et savoir parler une autre langue",
         "softSkills": "Avoir l'esprit analyste, curieuse et créative",
-        "attack": "inconnue",
+        "attack": "Grand-sourire",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -382,7 +382,7 @@
         "hardSkills": "Coaching, animation, pédagogie",
         "softSkills": "Bienveillante, optimiste, tenace",
         "goals": "Accompagner les élèves de la Wild vers la réussite!",
-        "attack": "vase en terre cuite",
+        "attack": "Vase en terre cuite",
         "background": "url('images/background-card-staff-small.png')",
         "logo": "images/logowildstaff.svg"
     },
@@ -395,7 +395,7 @@
         "hardSkills": "Café, écouter et analyser",
         "softSkills": "Ponctuelle, disponible, agréable ",
         "goals": "Carrière en cours de construction",
-        "attack": "inconnue",
+        "attack": "Analyse en cours",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -406,9 +406,9 @@
         "picture": "images/photos/profilepic30.jpg",
         "github": "https://github.com/NESRINERABAAOUI",
         "hardSkills": "Gestion du dossier administratifs",
-        "softSkills": "Persévérance, esprit du group, patience",
+        "softSkills": "Persévérance, esprit du groupe, patience",
         "goals": "Travailler en tant que développeur ou testeur informatique",
-        "attack": "inconnue",
+        "attack": "Testing",
         "background": "url('images/background-card-JS-small.png')",
         "logo": "images/logojs.svg"
     },
@@ -449,7 +449,7 @@
         "picture": "images/photos/profilepic33.jpg",
         "linkedin": "https://www.linkedin.com/in/fabien-rollet-ab69392a7/",
         "github": "https://github.com/Gamarin0",
-        "attack": "Discretion",
+        "attack": "Furtif",
         "background": "url('images/background-card-JS-small.png')",
         "logo": "images/logojs.svg"
     },
@@ -463,7 +463,7 @@
         "hardSkills": "Analyser, synthétiser, communiquer",
         "softSkills": "Patient, empathique, curieux",
         "goals": "Au sortir de la formation, ma priorité sera d'acquérir de l'expérience professionnelle. Sur le long terme j'envisage de me spécialiser dans l'IA et le deep learning.",
-        "attack": "inconnue",
+        "attack": "Maitre du jeu",
         "background": "url('images/Background-card-Data-small.png')",
         "logo": "images/logopython.svg"
     },
@@ -478,7 +478,7 @@
         "hardSkills": "Persévérante, appliquée, autonome",
         "softSkills": "Responsable, patiente, ponctuelle",
         "goals": "Devenir une développeuse chevronnée. ",
-        "attack": "",
+        "attack": "avis design",
         "background": "url('images/background-card-staff-small.png')",
         "logo": "images/logowildstaff.svg"
     }

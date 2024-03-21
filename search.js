@@ -1,11 +1,9 @@
 import database from "./data.json" assert {type: 'json'};
-import { createCard } from "./script.js";
 import { createElement } from "./script.js";
-// import createCard from "./script.js"
+import { createSearch } from "./script.js";
+import createCard from "./script.js"
 import { locationCards } from "./script.js"
-
-
-// j'écoute l'event
+import { displayCard, closeCardWithX, closeCardDesktop } from "./zoom.js";
 
 const searchInput = document.querySelector("input");
 searchInput.addEventListener("input", (event) => {
@@ -15,6 +13,7 @@ searchInput.addEventListener("input", (event) => {
     if (person.name.toLowerCase().includes(searchValue.toLowerCase())) {
       const index = database.indexOf(person);
       createSearch(index);
+
     }
   });
 });
@@ -26,7 +25,6 @@ let cardLogo;
 let cardImgDiv;
 let cardImg;
 let cardAttack;
-
 
 function createSearch(index) {
     card = createElement("div", locationCards, "card");
@@ -46,16 +44,6 @@ function createSearch(index) {
     card.setAttribute('data-index', index);
   }
 
+closeCardWithX();
+closeCardDesktop();
 
-
-// const toto = ["titi", "tata", "tutu"];
-// const result = toto.filter((element) => element.includes("i"));
-// console.log(result);
-// si une lettre est trouvée, on affiche les cartes
-// export function toto(){
-// }
-// addEventListener
-// innerHTML
-// for tout les elements de DB
-// si valeur input "include" DBname
-// createcard[DB(i)]
