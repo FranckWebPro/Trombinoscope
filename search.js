@@ -1,9 +1,7 @@
-import database from "./data.json" assert {type: 'json'};
+import database from "./data.json" with {type: 'json'};
 import { createSearch } from "./script.js";
-// import createCard from "./script.js"
-import { locationCards } from "./script.js"
+import { locationCards } from "./script.js";
 import { displayCard, closeCardWithX, closeCardDesktop } from "./zoom.js";
-
 
 const searchInput = document.querySelector("input");
 searchInput.addEventListener("input", (event) => {
@@ -16,8 +14,9 @@ searchInput.addEventListener("input", (event) => {
       const cards = document.querySelectorAll('.card');
       displayCard(cards);
     }
-  })
+  });
 });
 
 closeCardWithX();
 closeCardDesktop();
+
