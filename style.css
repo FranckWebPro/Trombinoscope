@@ -55,7 +55,7 @@ nav {
     align-items: center;
     justify-content: center;
     padding: .5rem;
-    max-height: 45px;
+    max-height: 40px;
     transition: opacity .3s;
 }
 
@@ -73,7 +73,7 @@ nav {
 }
 
 .logoWCS {
-    width: clamp(60px, 100%, 200px);
+    width: clamp(60px, 45%, 225px);
 }
 
 .logoMain {
@@ -81,13 +81,19 @@ nav {
 }
 
 .logoTeam {
-    width: clamp(30px, 10%, 120px);
+    width: clamp(30px, 75%, 120px);
     max-height: 60px;
     display: none;
 }
 
+nav>div {
+    display: flex;
+    justify-content: flex-end;
+}
+
 main {
     gap: 1rem;
+    padding: 1rem 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;
@@ -112,6 +118,7 @@ main {
     justify-content: center;
     width: auto;
     text-align: center;
+    padding: 0;
 }
 
 .slider {
@@ -134,10 +141,10 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: clamp(40px, 5vw, 60px);
+    width: clamp(200px, 100%, 350px);
+    height: 50px;
     border: var(--primary-color) solid 1px;
     border-radius: 15px;
-    margin-top: 2vw;
     overflow: hidden;
 }
 
@@ -147,6 +154,8 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 label>img {
@@ -182,17 +191,21 @@ p {
     text-align: center;
 }
 
-.pmain {
-    margin-top: 2rem;
+ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    gap: .5rem;
 }
 
-ul {
+li {
+    width: clamp(100px, 100%, 250px);
+    height: 50px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 1rem 0;
-    list-style: none;
-    gap: .25rem;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
 }
 
 li>button {
@@ -241,8 +254,8 @@ button {
     color: var(--secondary-color);
     border-radius: 15px;
     padding: 0.25rem;
-    width: clamp(80px, 20vw, 300px);
-    height: clamp(40px, 5vh, 60px);
+    width: 100%;
+    height: 100%;
 }
 
 button>p {
@@ -269,9 +282,10 @@ button>img {
 #section-cards {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding-top: 5rem;
+    padding: 1rem;
 }
 
 .card {
@@ -284,6 +298,7 @@ button>img {
     align-items: center;
     border-radius: 15px;
     transition: all .3s;
+    box-shadow: 2px 2px 4px 2px grey;
 }
 
 .card:hover {
@@ -446,15 +461,128 @@ button>img {
     cursor: pointer;
 }
 
+/* ZOOM */
+
+.zoomBlurBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackBackground {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 3rem 1rem 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.zoomedCard {
+    width: 170px;
+    height: 240px;
+    padding: .5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zoomedCardHeader {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.zoomedCardName {
+    color: #3A3335;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+    padding-left: 8px;
+}
+
+.zoomedCardLogo {
+    width: 12px;
+    margin: 4px 4px;
+}
+
+.zoomedCardImgContainer {
+    width: 100%;
+    height: 45%;
+    padding: 0 8px
+}
+
+.zoomedCardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.attackContainer {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomedCardAttack {
+    font-size: .8rem;
+    text-align: center;
+    max-width: 90%;
+}
+
+.zoomedCardInfo {
+    max-width: 500px;
+    max-height: 50%;
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomedCardInfo>p {
+    color: var(--text-color);
+}
+
+.socialLink {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socialLink>a>img {
+    width: 30px;
+}
+
+.closeButton {
+    top: 2rem;
+    right: 2rem;
+}
+
 @media screen and (min-width: 768px) {
 
-    main {
-        margin: 0 2rem;
+    header {
+        padding: 0 2rem;
     }
 
-    nav {
-        padding-left: 3rem;
-        padding-right: 3rem;
+    main {
+        padding: 2rem 0;
     }
 
     #backButtonMobile {
@@ -473,21 +601,34 @@ button>img {
         padding-left: .5rem;
     }
 
+    #searchBar {
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+
     .sparkles_light {
         width: 1.1rem;
         margin-top: -.3rem;
     }
 
     label {
-        width: 65%;
+        width: 50%;
+    }
+
+    ul {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    li>button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     button>img {
         display: none;
-    }
-
-    button {
-        margin-top: 1rem;
     }
 
     button>p {
@@ -538,77 +679,78 @@ button>img {
     #section-cards {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: space-evenly;
+        gap: 1rem;
         flex-wrap: wrap;
+        padding: 2rem;
     }
 
+    .zoomBlurBackground {
+        padding: 5% 4rem;
+    }
+
+    .blackBackground {
+        flex-direction: row;
+        padding: 2rem;
+        border-radius: 40px;
+        box-shadow: 4px 4px 24px 4px;
+    }
+
+    .zoomedCard {
+        width: 289px;
+        height: 408px;
+        padding: 1.5rem;
+    }
+
+    .zoomedCardHeader {
+        width: 100%;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .zoomedCardLogo {
+        width: 24px;
+        margin: 4px 4px;
+    }
+
+    .zoomedCardImgContainer {
+        width: 100%;
+        height: 48%;
+        padding: 0 4px;
+    }
+
+    .zoomedCardInfo {
+        max-width: 50%;
+        max-height: 100%;
+        gap: 2rem;
+    }
+
+    .zoomedCardInfo>p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .zoomedCardInfo>.cardEmail {
+        text-align: center;
+    }
+
+    .zoomedCardAttack {
+        font-size: 1.2rem;
+    }
+
+    .closeButton {
+        top: 2rem;
+        right: 2rem;
+    }
 }
 
-/* ZOOM */
-
-.zoomBlurBackground {
-    padding: 5% 4rem;
+@media screen and (min-width: 846px) {
+    #section-cards {
+        justify-content: space-between;
+    }
 }
-
-.blackBackground {
-    flex-direction: row;
-    padding: 2rem;
-    border-radius: 40px;
-    box-shadow: 4px 4px 24px 4px;
-}
-
-.zoomedCard {
-    width: 289px;
-    height: 408px;
-    padding: 1.5rem;
-}
-
-.zoomedCardHeader {
-    width: 100%;
-    height: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.zoomedCardLogo {
-    width: 24px;
-    margin: 4px 4px;
-}
-
-.zoomedCardImgContainer {
-    width: 100%;
-    height: 48%;
-    padding: 0 4px;
-}
-
-.zoomedCardInfo {
-    max-width: 50%;
-    max-height: 100%;
-    gap: 2rem;
-}
-
-.zoomedCardInfo>p {
-    width: 100%;
-    text-align: left;
-}
-
-.zoomedCardInfo>.cardEmail {
-    text-align: center;
-}
-
-.zoomedCardAttack {
-    font-size: 1.2rem;
-}
-
-.closeButton {
-    top: 2rem;
-    right: 2rem;
-}
-
-
 
 @media screen and (min-width: 1024px) {
 
@@ -637,8 +779,25 @@ button>img {
 /* Responsive ZOOM */
 
 @media screen and (min-width: 1200px) {
+
+    header {
+        padding: 0 5rem;
+    }
+
+    #searchBar {
+        padding: 0 5rem;
+    } 
+
+    #section-cards {
+        padding: 2rem 5rem;
+    }
+    
     .zoomBlurBackground {
         padding: 8% 10%;
+    }
+
+    .blackBackground {
+        flex-direction: row;
     }
 
     .zoomedCard {

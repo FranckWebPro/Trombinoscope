@@ -351,20 +351,16 @@ slidesJS.addEventListener("click", () => {
   // buttonMobile.style.display = "flex";
   nav.style.justifyContent = "space-between";
   logoTeam.style.display = "flex";
-  butt
 });
 
 slidesStaff.addEventListener("click", () => {
-
   searchBar.style.display = "flex";
   homePage.style.display = "none";
   locationCards.innerHTML = "";
   main.style.backgroundImage = "url('images/logowildbackground.svg')";
   logoTeam.src = "images/logowildstaff.svg";
   logoButtonStaff.src = "images/logowildstaff.svg";
-  // logoButtonData.style.display = "block"; 
   logoButtonSparkleStaff.src = "images/sparkles-dark.svg";
-  // logoButtonSparkle.style.display = "block"; 
   buttonStaff.style.backgroundColor = "#F7EFE0";
   textButtonStaff.style.color = "#3A3335";
   buttonData.style.backgroundColor = "#3A3335";
@@ -386,6 +382,5 @@ slidesStaff.addEventListener("click", () => {
   // buttonMobile.style.display = "flex";
   nav.style.justifyContent = "space-between";
   logoTeam.style.display = "flex";
-
 });
 
