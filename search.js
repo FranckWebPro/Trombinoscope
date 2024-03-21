@@ -9,7 +9,10 @@ import { locationCards } from "./script.js"
 
 // fonction create
 
+// CA MARCHE!!!!!!!!!!!!!!!!
+// fonction create
 // j'écoute l'event
+
 
 const searchInput = document.querySelector("input");
 searchInput.addEventListener("input", (event) => {
@@ -29,17 +32,10 @@ searchInput.addEventListener("input", (event) => {
 // console.log(result);
 
 // si une lettre est trouvée, on affiche les cartes
-
 // export function toto(){
-
 // }
-
 // addEventListener
-
 // innerHTML
-
 // for tout les elements de DB
-
 // si valeur input "include" DBname
-
 // createcard[DB(i)]

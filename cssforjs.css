@@ -10,7 +10,6 @@
     background-attachment: fixed;
 }
 
-
 .card {
     width: 250px;
     height: 350px;
@@ -53,10 +52,35 @@
     object-fit: cover;
 }
 
+.logo-button, .logo-button-sparkle {
+    display: none;
+}
+
+
 @media screen and (min-width: 768px) {
 
     /*  VERSION DISPLAY FLEX, seul bémol : la dernière ligne serait peut-être mieux non centrée
     mais difficile de viser la dernière ligne */
+
+    #buttonData, #buttonJS, #buttonStaff, #buttonAll {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-button, .logo-button-js, .logo-button-staff, .logo-button-all{
+        display: block;
+        width: 1.2rem;
+        padding-top: .2rem;
+        margin-right: .7rem;
+    }
+    
+    .logo-button-sparkle, .logo-button-sparkle-js, .logo-button-sparkle-staff, .logo-button-sparkle-all {
+        display: block;
+        width: 1.2rem;
+        padding-top: .2rem;
+        margin-left: .5rem;
+    }
+
     #section-cards {
         display: flex;
         flex-direction: row;
@@ -65,7 +89,9 @@
         gap: 2rem;
         flex-wrap: wrap;
     }
+
 }
+
 
 /* 
      VERSION GRID, mais implique de faire plusieurs media screen pour réduire la taille de la grille
