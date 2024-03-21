@@ -1,13 +1,10 @@
-import database from "./data.json" assert {type: 'json'};
+import database from "./data.json" with {type: 'json'};
 import { displayCard, closeCardWithX, closeCardDesktop } from "./zoom.js";
-
-
-/// Création des cartes - CODE EN COURS DE CREATIONa
 
 const main = document.getElementById('main');
 export const locationCards = document.getElementById("section-cards");
 
-function createElement(tag, parent, className = null) {
+export function createElement(tag, parent, className = null) {
   const element = document.createElement(tag);
   element.classList.add(className);
   parent.appendChild(element);
@@ -119,13 +116,17 @@ const logoButtonSparkleAll = createElement("img", divLogoButtonSparkleAll, "logo
 
 // Fonction pour adapter les boutons :
 
-function responsiveButton (logoButton, logoSparkle) {
+function responsiveButton(logoButton, logoSparkle) {
   if (window.innerWidth < 768) {
-    logoButton.style.display = "none"; 
+    logoButton.style.display = "none";
     logoSparkle.style.display = "none";
+    buttonDesktop.style.display = "none";
+    buttonMobile.style.display = "flex";
   } else {
-    logoButton.style.display = "block"; 
+    logoButton.style.display = "block";
     logoSparkle.style.display = "block";
+    buttonMobile.style.display = "none";
+    buttonDesktop.style.display = "flex";
   }
 }
 
@@ -134,7 +135,7 @@ function responsiveButton (logoButton, logoSparkle) {
 buttonData.addEventListener("click", () => {
   locationCards.innerHTML = "";
   main.style.backgroundImage = "url('images/logopythonbackground.svg')";
-  logoButtonData.src = "images/logopython.svg"; 
+  logoButtonData.src = "images/logopython.svg";
   // logoButtonData.style.display = "block"; 
   logoButtonSparkle.src = "images/sparkles-dark.svg";
   // logoButtonSparkle.style.display = "block"; 
@@ -166,7 +167,7 @@ buttonJS.addEventListener("click", () => {
   locationCards.innerHTML = "";
   main.style.backgroundImage = "url('images/logoJSbackground.svg')";
   logoTeam.src = "images/logojs.svg";
-  logoButtonJS.src = "images/logojs.svg"; 
+  logoButtonJS.src = "images/logojs.svg";
   logoButtonSparkleJS.src = "images/sparkles-dark.svg";
   buttonJS.style.backgroundColor = "#F7EFE0";
   textButtonJS.style.color = "#3A3335";
@@ -179,7 +180,7 @@ buttonJS.addEventListener("click", () => {
   createCard("JS");
   const cards = document.querySelectorAll('.card');
   displayCard(cards);
-  responsiveButton (logoButtonJS, logoButtonSparkleJS);
+  responsiveButton(logoButtonJS, logoButtonSparkleJS);
   logoButtonData.style.display = "none";  //// REPRENDRE
   logoButtonSparkle.style.display = "none"; /// REPRENDRE
   logoButtonStaff.style.display = "none";  //// REPRENDRE
@@ -195,7 +196,7 @@ buttonStaff.addEventListener("click", () => {
   locationCards.innerHTML = "";
   main.style.backgroundImage = "url('images/logowildbackground.svg')";
   logoTeam.src = "images/logowildstaff.svg";
-  logoButtonStaff.src = "images/logowildstaff.svg"; 
+  logoButtonStaff.src = "images/logowildstaff.svg";
   // logoButtonData.style.display = "block"; 
   logoButtonSparkleStaff.src = "images/sparkles-dark.svg";
   // logoButtonSparkle.style.display = "block"; 
@@ -210,7 +211,7 @@ buttonStaff.addEventListener("click", () => {
   createCard("Staff");
   const cards = document.querySelectorAll('.card');
   displayCard(cards);
-  responsiveButton (logoButtonStaff, logoButtonSparkleStaff);
+  responsiveButton(logoButtonStaff, logoButtonSparkleStaff);
   logoButtonData.style.display = "none";  //// REPRENDRE
   logoButtonSparkle.style.display = "none"; /// REPRENDRE
   logoButtonJS.style.display = "none";  //// REPRENDRE
@@ -226,7 +227,7 @@ buttonAll.addEventListener("click", () => {
   locationCards.innerHTML = "";
   main.style.backgroundImage = "url('images/Logo-Wildcards-light.svg')";
   logoTeam.src = "images/Logo-Wildcards-light.svg";
-  logoButtonAll.src = "images/Logo-wildcards-dark.svg"; 
+  logoButtonAll.src = "images/Logo-wildcards-dark.svg";
   // logoButtonData.style.display = "block"; 
   logoButtonSparkleAll.src = "images/sparkles-dark.svg";
   // logoButtonSparkle.style.display = "block"; 
@@ -241,7 +242,7 @@ buttonAll.addEventListener("click", () => {
   createAll();
   const cards = document.querySelectorAll('.card');
   displayCard(cards);
-  responsiveButton (logoButtonAll, logoButtonSparkleAll);
+  responsiveButton(logoButtonAll, logoButtonSparkleAll);
   logoButtonData.style.display = "none";  //// REPRENDRE
   logoButtonSparkle.style.display = "none"; /// REPRENDRE
   logoButtonJS.style.display = "none";  //// REPRENDRE
@@ -254,10 +255,10 @@ buttonAll.addEventListener("click", () => {
 // Responsive :
 
 addEventListener("resize", () => {
-  responsiveButton (logoButtonData, logoButtonSparkle);
-  responsiveButton (logoButtonJS, logoButtonSparkleJS);
-  responsiveButton (logoButtonStaff, logoButtonSparkleStaff);
-  responsiveButton (logoButtonAll, logoButtonSparkleAll);
+  responsiveButton(logoButtonData, logoButtonSparkle);
+  responsiveButton(logoButtonJS, logoButtonSparkleJS);
+  responsiveButton(logoButtonStaff, logoButtonSparkleStaff);
+  responsiveButton(logoButtonAll, logoButtonSparkleAll);
 });
 
 
@@ -274,3 +275,113 @@ closeCardWithX();
 closeCardDesktop();
 
 // début page index //
+const slidesData = document.getElementById("slidesData");
+const slidesJS = document.getElementById("slidesJS");
+const slidesStaff = document.getElementById("slidesStaff");
+const searchBar = document.getElementById("searchBar");
+const homePage = document.getElementById("homePage");
+
+const buttonMobile = document.getElementById("backButtonMobile");
+const buttonDesktop = document.getElementById("backButtonDesktop");
+const nav = document.querySelector("nav");
+
+slidesData.addEventListener("click", () => {
+  searchBar.style.display = "flex";
+  homePage.style.display = "none";
+  locationCards.innerHTML = "";
+  main.style.backgroundImage = "url('images/logopythonbackground.svg')";
+  logoButtonData.src = "images/logopython.svg";
+  // logoButtonData.style.display = "block"; 
+  logoButtonSparkle.src = "images/sparkles-dark.svg";
+  // logoButtonSparkle.style.display = "block"; 
+  logoTeam.src = "images/logopython.svg";
+  buttonData.style.backgroundColor = "#F7EFE0";
+  textButtonData.style.color = "#3A3335";
+  buttonJS.style.backgroundColor = "#3A3335";
+  textButtonJS.style.color = "#F7EFE0";
+  buttonStaff.style.backgroundColor = "#3A3335";
+  textButtonStaff.style.color = "#F7EFE0";
+  buttonAll.style.backgroundColor = "#3A3335";
+  textButtonAll.style.color = "#F7EFE0";
+  createCard("DATA");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
+  responsiveButton(logoButtonData, logoButtonSparkle);
+  logoButtonJS.style.display = "none";  //// REPRENDRE
+  logoButtonSparkleJS.style.display = "none"; /// REPRENDRE
+  logoButtonStaff.style.display = "none";  //// REPRENDRE
+  logoButtonSparkleStaff.style.display = "none"; /// REPRENDRE
+  logoButtonAll.style.display = "none";  //// REPRENDRE
+  logoButtonSparkleAll.style.display = "none"; /// REPRENDRE
+  // buttonMobile.style.display = "flex";
+  nav.style.justifyContent = "space-between";
+  logoTeam.style.display = "flex";
+});
+
+slidesJS.addEventListener("click", () => {
+  searchBar.style.display = "flex";
+  homePage.style.display = "none";
+  locationCards.innerHTML = "";
+  main.style.backgroundImage = "url('images/logoJSbackground.svg')";
+  logoTeam.src = "images/logojs.svg";
+  logoButtonJS.src = "images/logojs.svg";
+  logoButtonSparkleJS.src = "images/sparkles-dark.svg";
+  buttonJS.style.backgroundColor = "#F7EFE0";
+  textButtonJS.style.color = "#3A3335";
+  buttonData.style.backgroundColor = "#3A3335";
+  textButtonData.style.color = "#F7EFE0";
+  buttonStaff.style.backgroundColor = "#3A3335";
+  textButtonStaff.style.color = "#F7EFE0";
+  buttonAll.style.backgroundColor = "#3A3335";
+  textButtonAll.style.color = "#F7EFE0";
+  createCard("JS");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
+  responsiveButton(logoButtonJS, logoButtonSparkleJS);
+  logoButtonData.style.display = "none";  //// REPRENDRE
+  logoButtonSparkle.style.display = "none"; /// REPRENDRE
+  logoButtonStaff.style.display = "none";  //// REPRENDRE
+  logoButtonSparkleStaff.style.display = "none"; /// REPRENDRE
+  logoButtonAll.style.display = "none";  //// REPRENDRE
+  logoButtonSparkleAll.style.display = "none"; /// REPRENDRE
+  // buttonMobile.style.display = "flex";
+  nav.style.justifyContent = "space-between";
+  logoTeam.style.display = "flex";
+  butt
+});
+
+slidesStaff.addEventListener("click", () => {
+
+  searchBar.style.display = "flex";
+  homePage.style.display = "none";
+  locationCards.innerHTML = "";
+  main.style.backgroundImage = "url('images/logowildbackground.svg')";
+  logoTeam.src = "images/logowildstaff.svg";
+  logoButtonStaff.src = "images/logowildstaff.svg";
+  // logoButtonData.style.display = "block"; 
+  logoButtonSparkleStaff.src = "images/sparkles-dark.svg";
+  // logoButtonSparkle.style.display = "block"; 
+  buttonStaff.style.backgroundColor = "#F7EFE0";
+  textButtonStaff.style.color = "#3A3335";
+  buttonData.style.backgroundColor = "#3A3335";
+  textButtonData.style.color = "#F7EFE0";
+  buttonJS.style.backgroundColor = "#3A3335";
+  textButtonJS.style.color = "#F7EFE0";
+  buttonAll.style.backgroundColor = "#3A3335";
+  textButtonAll.style.color = "#F7EFE0";
+  createCard("Staff");
+  const cards = document.querySelectorAll('.card');
+  displayCard(cards);
+  responsiveButton(logoButtonStaff, logoButtonSparkleStaff);
+  logoButtonData.style.display = "none";  //// REPRENDRE
+  logoButtonSparkle.style.display = "none"; /// REPRENDRE
+  logoButtonJS.style.display = "none";  //// REPRENDRE
+  logoButtonSparkleJS.style.display = "none"; /// REPRENDRE
+  logoButtonAll.style.display = "none";  //// REPRENDRE
+  logoButtonSparkleAll.style.display = "none"; /// REPRENDRE
+  // buttonMobile.style.display = "flex";
+  nav.style.justifyContent = "space-between";
+  logoTeam.style.display = "flex";
+
+});
+
