@@ -44,7 +44,7 @@ export function createCard(teamName) {
   }
 };
 
-export function createAll() {
+function createAll() {
   for (let i = 0; i < database.length; i++) {
     card = createElement("div", locationCards, "card");
     card.style.backgroundImage = database[i].background;
@@ -60,6 +60,7 @@ export function createAll() {
     cardImg.src = database[i].picture;
     cardAttack = createElement("p", card, "card-attack");
     cardAttack.innerText = `Attaque :\n${database[i].attack}`;
+    card.setAttribute('data-index', i);
   }
 };
 
