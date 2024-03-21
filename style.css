@@ -47,7 +47,7 @@ nav {
     align-items: center;
 }
 
-.btnRetourMobile {
+.backButtonMobile {
     background-color: var(--secondary-color);
     border-radius: 15px;
     width: clamp(30px, 10%, 120px);
@@ -59,15 +59,19 @@ nav {
     transition: opacity .3s;
 }
 
-.btnRetourMobile:hover {
-    opacity: 0.33;
+.backButtonDesktop {
+    transition: all .3s;
+}
+
+.backButtonDesktop:hover {
+    opacity: 0.6;
 }
 
 .arrow_back {
     width: clamp(30px, 10%, 120px);
 }
 
-.btnRetourDesktop {
+.backButtonDesktop {
     display: none;
 }
 
@@ -85,8 +89,11 @@ nav {
 }
 
 main {
-    background-color: var(--secondary-color);
     gap: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    background-attachment: fixed;
 }
 
 .booster>img {
@@ -134,8 +141,9 @@ label {
 
 .searchBar {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
 label>img {
@@ -150,10 +158,15 @@ label>input {
     height: 100%;
     border-radius: 15px 0 0 15px;
     background-color: var(--secondary-color);
+    padding: .5rem;
 }
 
 label>img {
     width: clamp(30px, 4vw, 80px);
+}
+
+label>img:hover {
+    cursor: pointer;
 }
 
 a {
@@ -168,10 +181,24 @@ p {
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 1rem 0;
     list-style: none;
     gap: .25rem;
+}
+
+li>button {
+    transition: all .3s;
+}
+
+li>button:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.allLogo {
+    border-radius: 40px;
 }
 
 main>h2 {
@@ -242,16 +269,16 @@ button>img {
         padding-right: 3rem;
     }
 
-    .btnRetourMobile {
+    .backButtonMobile {
         display: none;
     }
 
-    .btnRetourDesktop {
+    .backButtonDesktop {
         display: flex;
         font-size: clamp(1rem, 2vw, 1.7rem);
     }
 
-    .retour {
+    .backButton {
         font-family: "Beleren-Bold";
         font-size: clamp(1.2rem, 1vw, 1rem);
         margin-top: 0;
