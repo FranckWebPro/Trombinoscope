@@ -1,7 +1,6 @@
 import database from "./data.json" assert {type: 'json'};
 import { displayCard, closeCardWithX, closeCardDesktop } from "./zoom.js";
 
-console.log(database);
 
 /// Création des cartes - CODE EN COURS DE CREATION
 
@@ -21,7 +20,7 @@ let cardLogo;
 let cardImgDiv;
 let cardImg;
 
-function createCard(teamName, linkBG, linkLogo) {
+export function createCard(teamName, linkBG, linkLogo) {
   for (let i = 0; i < database.length; i++) {
     if (database[i].team === teamName) {
       card = createElement("div", locationCards, "card");
