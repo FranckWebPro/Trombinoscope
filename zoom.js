@@ -1,4 +1,4 @@
-import database from "./data.json" with {type: 'json'};
+import database from "./data.json" assert {type: 'json'};
 
 const zoomDisplay = document.querySelector('.zoomBlurBackground');
 const closeButton = document.querySelector('.closeButton');
