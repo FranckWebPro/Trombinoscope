@@ -1,7 +1,6 @@
 import database from "./data.json" assert {type: 'json'};
 import { displayCard, closeCardWithX, closeCardDesktop } from "./zoom.js";
 
-console.log(database);
 
 /// Création des cartes - CODE EN COURS DE CREATIONa
 
