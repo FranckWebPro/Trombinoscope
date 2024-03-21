@@ -43,17 +43,17 @@ header {
 nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.backButtonMobile {
+#backButtonMobile {
+    display: none; 
+    align-items: center;
+    justify-content: center;
     background-color: var(--secondary-color);
     border-radius: 15px;
     width: clamp(30px, 10%, 120px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: .5rem;
     max-height: 45px;
     transition: opacity .3s;
@@ -61,6 +61,7 @@ nav {
 
 .backButtonDesktop {
     transition: all .3s;
+    display: none;
 }
 
 .backButtonDesktop:hover {
@@ -71,9 +72,6 @@ nav {
     width: clamp(30px, 10%, 120px);
 }
 
-.backButtonDesktop {
-    display: none;
-}
 
 .logoWCS {
     width: clamp(60px, 30%, 200px);
@@ -86,6 +84,7 @@ nav {
 .logoTeam {
     width: clamp(30px, 10%, 120px);
     max-height: 60px;
+    display: none; /*display: flex*/
 }
 
 main {
@@ -454,7 +453,7 @@ button>img {
     }
 
     .backButtonDesktop {
-        display: flex;
+        display: none; /*display: flex;*/
         font-size: clamp(1rem, 2vw, 1.7rem);
     }
 
