@@ -121,7 +121,7 @@ function responsiveButton(logoButton, logoSparkle) {
     logoButton.style.display = "none";
     logoSparkle.style.display = "none";
     textButtonAll.style.display = "block";
-    textButtonAll.style.fontSize = "20px";
+    textButtonAll.style.fontSize = "1rem";
     textButtonAll.style.fontFamily = "Beleren-Bold";
     textButtonAll.style.paddingTop = ".2rem";
     buttonDesktop.style.display = "none";
