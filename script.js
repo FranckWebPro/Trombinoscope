@@ -120,6 +120,10 @@ function responsiveButton(logoButton, logoSparkle) {
   if (window.innerWidth < 768) {
     logoButton.style.display = "none";
     logoSparkle.style.display = "none";
+    textButtonAll.style.display = "block";
+    textButtonAll.style.fontSize = "1rem";
+    textButtonAll.style.fontFamily = "Beleren-Bold";
+    textButtonAll.style.paddingTop = ".2rem";
     buttonDesktop.style.display = "none";
     buttonMobile.style.display = "flex";
   } else {
