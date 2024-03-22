@@ -272,3 +272,5 @@ addEventListener("resize", () => {
 
 closeCardWithX();
 closeCardDesktop();
+
+// début page index //
