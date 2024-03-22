@@ -27,6 +27,7 @@ body {
     background-color: var(--secondary-color);
     font-family: var(--text-font), sans-serif;
     font-size: 1rem;
+    min-height: 100vh;
 }
 
 header {
@@ -92,6 +93,7 @@ nav>div {
 }
 
 main {
+    min-height: 90vh;
     gap: 1rem;
     padding: 1rem 0;
     background-repeat: no-repeat;
@@ -260,6 +262,7 @@ button {
 
 button>p {
     display: none;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
 button>img {
@@ -278,6 +281,20 @@ button>img {
 .logo-button-sparkle {
     display: none;
 }
+
+.logo-button,
+    .logo-button-js,
+    .logo-button-staff,
+    .logo-button-all {
+        width: 20px;
+    }
+
+    .logo-button-sparkle,
+    .logo-button-sparkle-js,
+    .logo-button-sparkle-staff,
+    .logo-button-sparkle-all {
+        width: 20px;
+    }
 
 #section-cards {
     display: flex;
@@ -662,6 +679,7 @@ button>img {
     .logo-button-all {
         display: block;
         width: 1.2rem;
+        max-height: 40px;
         padding-top: .2rem;
         margin-right: .7rem;
     }
