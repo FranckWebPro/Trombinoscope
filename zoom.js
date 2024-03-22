@@ -18,7 +18,10 @@ const cardGithub = document.querySelector('.cardGithub');
 const cardGoals = document.querySelector('.cardGoals');
 
 function filterUndefined(element, dataToFilter, property, key) {
-    if (dataToFilter !== undefined) {
+    if (dataToFilter !== undefined && property === "href") {
+        element.style.display = 'block';
+        element[property] = `${dataToFilter}`;
+    } else if (dataToFilter !== undefined) {
         element.style.display = 'block';
         element[property] = `${key} : ${dataToFilter}`;
     } else if (dataToFilter === undefined) {
@@ -28,14 +31,14 @@ function filterUndefined(element, dataToFilter, property, key) {
 
 function teamCardToDisplay(index) {
     if (database[index].team === 'JS') {
-        zoomedCard.style.backgroundImage = "url('images/background-card-JS-small.png')";
-        zoomedCardLogo.src = 'images/logojs.svg';
+        zoomedCard.style.backgroundImage = "url('./images/background-card-JS-small.png')";
+        zoomedCardLogo.src = './images/logojs.svg';
     } else if (database[index].team === 'DATA') {
-        zoomedCard.style.backgroundImage = "url('images/Background-card-Data-small.png')";
-        zoomedCardLogo.src = 'images/logopython.svg';
+        zoomedCard.style.backgroundImage = "url('./images/Background-card-Data-small.png')";
+        zoomedCardLogo.src = './images/logopython.svg';
     } else if (database[index].team === 'Staff') {
-        zoomedCard.style.backgroundImage = "url('images/background-card-staff-small.png')";
-        zoomedCardLogo.src = 'images/logowildstaff.svg';
+        zoomedCard.style.backgroundImage = "./url('images/background-card-staff-small.png')";
+        zoomedCardLogo.src = './images/logowildstaff.svg';
     }
 };
 
