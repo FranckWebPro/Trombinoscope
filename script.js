@@ -121,7 +121,6 @@ function responsiveButton(logoButton, logoSparkle) {
     logoButton.style.display = "none";
     logoSparkle.style.display = "none";
     textButtonAll.style.display = "block";
-    textButtonAll.style.fontSize = "1rem";
     textButtonAll.style.fontFamily = "Beleren-Bold";
     textButtonAll.style.paddingTop = ".2rem";
     buttonDesktop.style.display = "none";
@@ -168,7 +167,7 @@ buttonData.addEventListener("click", () => {
 
 buttonJS.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  main.style.backgroundImage = "url('./images/logoJSbackground.svg')";
+  main.style.backgroundImage = "url('./images/logojsbackground.svg')";
   logoTeam.src = "./images/logojs.svg";
   logoButtonJS.src = "./images/logojs.svg";
   logoButtonSparkleJS.src = "./images/sparkles-dark.svg";
