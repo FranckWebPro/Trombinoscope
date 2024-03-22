@@ -138,12 +138,12 @@ function responsiveButton(logoButton, logoSparkle) {
 
 buttonData.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  main.style.backgroundImage = "url('images/logopythonbackground.svg')";
-  logoButtonData.src = "images/logopython.svg";
+  main.style.backgroundImage = "url('./images/logopythonbackground.svg')";
+  logoButtonData.src = "./images/logopython.svg";
   // logoButtonData.style.display = "block"; 
-  logoButtonSparkle.src = "images/sparkles-dark.svg";
+  logoButtonSparkle.src = "./images/sparkles-dark.svg";
   // logoButtonSparkle.style.display = "block"; 
-  logoTeam.src = "images/logopython.svg";
+  logoTeam.src = "./images/logopython.svg";
   buttonData.style.backgroundColor = "#F7EFE0";
   textButtonData.style.color = "#3A3335";
   buttonJS.style.backgroundColor = "#3A3335";
@@ -164,15 +164,14 @@ buttonData.addEventListener("click", () => {
   logoButtonSparkleAll.style.display = "none"; /// REPRENDRE
 });
 
-
 // Click sur Bouton JS
 
 buttonJS.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  main.style.backgroundImage = "url('images/logoJSbackground.svg')";
-  logoTeam.src = "images/logojs.svg";
-  logoButtonJS.src = "images/logojs.svg";
-  logoButtonSparkleJS.src = "images/sparkles-dark.svg";
+  main.style.backgroundImage = "url('./images/logoJSbackground.svg')";
+  logoTeam.src = "./images/logojs.svg";
+  logoButtonJS.src = "./images/logojs.svg";
+  logoButtonSparkleJS.src = "./images/sparkles-dark.svg";
   buttonJS.style.backgroundColor = "#F7EFE0";
   textButtonJS.style.color = "#3A3335";
   buttonData.style.backgroundColor = "#3A3335";
@@ -193,16 +192,15 @@ buttonJS.addEventListener("click", () => {
   logoButtonSparkleAll.style.display = "none"; /// REPRENDRE
 });
 
-
 // Click sur Bouton Staff
 
 buttonStaff.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  main.style.backgroundImage = "url('images/logowildbackground.svg')";
-  logoTeam.src = "images/logowildstaff.svg";
-  logoButtonStaff.src = "images/logowildstaff.svg";
+  main.style.backgroundImage = "url('./images/logowildbackground.svg')";
+  logoTeam.src = "./images/logowildstaff.svg";
+  logoButtonStaff.src = "./images/logowildstaff.svg";
   // logoButtonData.style.display = "block"; 
-  logoButtonSparkleStaff.src = "images/sparkles-dark.svg";
+  logoButtonSparkleStaff.src = "./images/sparkles-dark.svg";
   // logoButtonSparkle.style.display = "block"; 
   buttonStaff.style.backgroundColor = "#F7EFE0";
   textButtonStaff.style.color = "#3A3335";
@@ -224,16 +222,15 @@ buttonStaff.addEventListener("click", () => {
   logoButtonSparkleAll.style.display = "none"; /// REPRENDRE
 });
 
-
 // Click sur bouton All
 
 buttonAll.addEventListener("click", () => {
   locationCards.innerHTML = "";
-  main.style.backgroundImage = "url('images/Logo-Wildcards-light.svg')";
-  logoTeam.src = "images/Logo-Wildcards-light.svg";
-  logoButtonAll.src = "images/Logo-wildcards-dark.svg";
+  main.style.backgroundImage = "url('./images/Logo-Wildcards-light.svg')";
+  logoTeam.src = "./images/Logo-Wildcards-light.svg";
+  logoButtonAll.src = "./images/Logo-wildcards-dark.svg";
   // logoButtonData.style.display = "block"; 
-  logoButtonSparkleAll.src = "images/sparkles-dark.svg";
+  logoButtonSparkleAll.src = "./images/sparkles-dark.svg";
   // logoButtonSparkle.style.display = "block"; 
   buttonAll.style.backgroundColor = "#F7EFE0";
   textButtonAll.style.color = "#3A3335";
@@ -255,7 +252,6 @@ buttonAll.addEventListener("click", () => {
   logoButtonSparkleStaff.style.display = "none"; /// REPRENDRE
 });
 
-
 // Responsive :
 
 addEventListener("resize", () => {
@@ -264,8 +260,6 @@ addEventListener("resize", () => {
   responsiveButton(logoButtonStaff, logoButtonSparkleStaff);
   responsiveButton(logoButtonAll, logoButtonSparkleAll);
 });
-
-
 
 /// LIEN DEPUIS PAGE D'ACCUEIL QUI NE FONCTIONNE PAS : 
 // const boosterData = document.getElementById("boosterData");
@@ -293,12 +287,12 @@ slidesData.addEventListener("click", () => {
   searchBar.style.display = "flex";
   homePage.style.display = "none";
   locationCards.innerHTML = "";
-  main.style.backgroundImage = "url('images/logopythonbackground.svg')";
-  logoButtonData.src = "images/logopython.svg";
+  main.style.backgroundImage = "url('./images/logopythonbackground.svg')";
+  logoTeam.src = "./images/logopython.svg";
+  logoButtonData.src = "./images/logopython.svg";
   // logoButtonData.style.display = "block"; 
-  logoButtonSparkle.src = "images/sparkles-dark.svg";
+  logoButtonSparkle.src = "./images/sparkles-dark.svg";
   // logoButtonSparkle.style.display = "block"; 
-  logoTeam.src = "images/logopython.svg";
   buttonData.style.backgroundColor = "#F7EFE0";
   textButtonData.style.color = "#3A3335";
   buttonJS.style.backgroundColor = "#3A3335";
@@ -326,10 +320,10 @@ slidesJS.addEventListener("click", () => {
   searchBar.style.display = "flex";
   homePage.style.display = "none";
   locationCards.innerHTML = "";
-  main.style.backgroundImage = "url('images/logoJSbackground.svg')";
-  logoTeam.src = "images/logojs.svg";
-  logoButtonJS.src = "images/logojs.svg";
-  logoButtonSparkleJS.src = "images/sparkles-dark.svg";
+  main.style.backgroundImage = "url('./images/logoJSbackground.svg')";
+  logoTeam.src = "./images/logojs.svg";
+  logoButtonJS.src = "./images/logojs.svg";
+  logoButtonSparkleJS.src = "./images/sparkles-dark.svg";
   buttonJS.style.backgroundColor = "#F7EFE0";
   textButtonJS.style.color = "#3A3335";
   buttonData.style.backgroundColor = "#3A3335";
@@ -357,10 +351,10 @@ slidesStaff.addEventListener("click", () => {
   searchBar.style.display = "flex";
   homePage.style.display = "none";
   locationCards.innerHTML = "";
-  main.style.backgroundImage = "url('images/logowildbackground.svg')";
-  logoTeam.src = "images/logowildstaff.svg";
-  logoButtonStaff.src = "images/logowildstaff.svg";
-  logoButtonSparkleStaff.src = "images/sparkles-dark.svg";
+  main.style.backgroundImage = "url('./images/logowildbackground.svg')";
+  logoTeam.src = "./images/logowildstaff.svg";
+  logoButtonStaff.src = "./images/logowildstaff.svg";
+  logoButtonSparkleStaff.src = "./images/sparkles-dark.svg";
   buttonStaff.style.backgroundColor = "#F7EFE0";
   textButtonStaff.style.color = "#3A3335";
   buttonData.style.backgroundColor = "#3A3335";
