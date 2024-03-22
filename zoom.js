@@ -31,14 +31,14 @@ function filterUndefined(element, dataToFilter, property, key) {
 
 function teamCardToDisplay(index) {
     if (database[index].team === 'JS') {
-        zoomedCard.style.backgroundImage = "url('images/background-card-JS-small.png')";
-        zoomedCardLogo.src = 'images/logojs.svg';
+        zoomedCard.style.backgroundImage = "url('./images/background-card-JS-small.png')";
+        zoomedCardLogo.src = './images/logojs.svg';
     } else if (database[index].team === 'DATA') {
-        zoomedCard.style.backgroundImage = "url('images/Background-card-Data-small.png')";
-        zoomedCardLogo.src = 'images/logopython.svg';
+        zoomedCard.style.backgroundImage = "url('./images/Background-card-Data-small.png')";
+        zoomedCardLogo.src = './images/logopython.svg';
     } else if (database[index].team === 'Staff') {
-        zoomedCard.style.backgroundImage = "url('images/background-card-staff-small.png')";
-        zoomedCardLogo.src = 'images/logowildstaff.svg';
+        zoomedCard.style.backgroundImage = "./url('images/background-card-staff-small.png')";
+        zoomedCardLogo.src = './images/logowildstaff.svg';
     }
 };
 
